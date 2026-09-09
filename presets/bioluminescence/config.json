@@ -1,0 +1,3737 @@
+{
+    "ai": {
+        "autoTitle": true,
+        "connectTimeout": 15,
+        "context": {
+            "manage": true,
+            "reserveTokens": 4096,
+            "summarise": true
+        },
+        "customModels": [
+            {
+                "modelProvider": "google",
+                "provider": "openrouter",
+                "title": "Gemini 2.5 Flash",
+                "value": "gemini-2.5-flash"
+            },
+            {
+                "api_format": "mistral",
+                "endpoint": "https://api.mistral.ai/v1/chat/completions",
+                "icon": "mistral-symbolic",
+                "key_id": "mistral",
+                "model": "mistral-medium-2505",
+                "name": "Mistral Medium",
+                "requires_key": true
+            }
+        ],
+        "ephemeralInterfaceMessages": false,
+        "extractDocuments": true,
+        "files": {
+            "roots": []
+        },
+        "indexAtStartup": true,
+        "maxAttachmentMib": 8,
+        "maxAttachments": 6,
+        "maxOutputTokens": 0,
+        "maxRetries": 2,
+        "memory": {
+            "enabled": true,
+            "limit": 40
+        },
+        "notify": {
+            "minimumSeconds": 4,
+            "onlyWhenAway": true,
+            "whenDone": true
+        },
+        "personas": [],
+        "projects": [],
+        "rag": {
+            "collections": [],
+            "embeddingModel": "",
+            "enabled": false
+        },
+        "requestTimeout": 300,
+        "sessions": {
+            "retentionDays": 30
+        },
+        "showOpenRouterSessionCost": false,
+        "showTokensPerSecond": false,
+        "systemPrompt": "## Style\n- Use casual tone, don't be formal!\n- Always be brief and to the point, unless asked otherwise\n- Don't repeat the user's question\n- Be approachable: Avoid using overly complicated, domain-specific terms and provide analogies when asked to explain a concept\n\n## Context (ignore when irrelevant)\n- You are a helpful and inspiring sidebar assistant on a {DISTRO} Linux system\n- Desktop environment: {DE}\n- Current date & time: {DATETIME}\n- Focused app: {WINDOWCLASS}\n\n## Presentation\n- Use Markdown features in your response: \n  - **Bold** text to **highlight keywords** in your response\n  - **Split long information into small sections** with h2 headers and a relevant emoji at the start of it (for example `## \ud83d\udc27 Linux`). Bullet points are preferred over long paragraphs, unless you're offering writing support or instructed otherwise by the user.\n- Asked to compare different options? You should firstly use a table to compare the main aspects, then elaborate or include relevant comments from online forums *after* the table. Make sure to provide a final recommendation for the user's use case!\n- Use LaTeX formatting for mathematical and scientific notations whenever appropriate. Enclose all LaTeX '$$' delimiters. NEVER generate LaTeX code in a latex block unless the user explicitly asks for it. DO NOT use LaTeX for regular documents (resumes, letters, essays, CVs, etc.).\n\nThanks!\n",
+        "tools": {
+            "allowShellInLocalPolicy": false,
+            "alwaysAllow": [
+                "settings_search",
+                "settings_get",
+                "switch_to_search_mode",
+                "web_search",
+                "fetch_url"
+            ],
+            "alwaysDeny": [],
+            "localModels": false,
+            "logSize": 50,
+            "mode": "functions",
+            "reviewConfigChanges": true,
+            "scopePerConversation": false
+        },
+        "vision": {
+            "ocrEnabled": true
+        },
+        "voice": {
+            "enabled": false
+        }
+    },
+    "appStats": {
+        "defaultGranularity": "day",
+        "defaultMetric": "fg",
+        "enable": true,
+        "energySource": "auto",
+        "flushIntervalMs": 60000,
+        "gpuFullEvery": 30,
+        "idleTimeoutSec": 300,
+        "keepSelection": false,
+        "lastGranularity": "day",
+        "lastMetric": "fg",
+        "lastView": "battery",
+        "minDurationSec": 0,
+        "overlayEnabled": true,
+        "rememberLastView": true,
+        "retentionDays": 1,
+        "retentionMode": "previousMonth",
+        "sampleIntervalMs": 10000,
+        "showComparison": false,
+        "showHeadless": false,
+        "trackHeadless": true,
+        "weekStartsMonday": true
+    },
+    "appearance": {
+        "animationMultiplier": 1,
+        "appLaunchAnimation": {
+            "curve": "iiAppOpen",
+            "enable": true,
+            "speed": 3.2,
+            "startPercent": 20
+        },
+        "blurSize": 10,
+        "borderColorType": "primary",
+        "borderWidth": 2,
+        "borderless": false,
+        "colorEngine": "fork",
+        "colorfulScrollbar": true,
+        "customColorSchemes": [],
+        "defaultBorderRadius": 18,
+        "extraBackgroundTint": true,
+        "fakeScreenRounding": 0,
+        "fonts": {
+            "enableCustom": false,
+            "expressive": "Space Grotesk",
+            "iconNerd": "JetBrains Mono NF",
+            "main": "Google Sans Flex",
+            "monospace": "JetBrains Mono NF",
+            "numbers": "Google Sans Flex",
+            "reading": "Readex Pro",
+            "roundnessFull": false,
+            "title": "Google Sans Flex"
+        },
+        "gapsIn": 4,
+        "gapsOut": 5,
+        "globalRounding": "large",
+        "iconTheme": "",
+        "iconTintPercentage": 0.5799528614627678,
+        "icons": {
+            "enableShapeMask": false,
+            "enableThemed": false,
+            "shapeMask": "Heart"
+        },
+        "ignoreAlpha": 0.1,
+        "openrgb": {
+            "applyOnStartup": true,
+            "devices": [],
+            "enable": false,
+            "fadeDuration": 0.5,
+            "interpolationSteps": 100
+        },
+        "palette": {
+            "accentColor": "",
+            "type": "scheme-tonal-spot"
+        },
+        "roundingValue": 24,
+        "scrollAnimations": false,
+        "scrollFadeMask": true,
+        "settingsPerformanceMode": true,
+        "sharpMode": false,
+        "toggleWindowRounding": true,
+        "transparency": {
+            "automatic": true,
+            "backgroundTransparency": 0.2823669409343364,
+            "contentTransparency": 0.3640866698409531,
+            "enable": false,
+            "popups": true
+        },
+        "wallpaperTheming": {
+            "autoRestartQuickshell": true,
+            "enableAppsAndShell": true,
+            "enableQtApps": true,
+            "enableTerminal": true,
+            "terminalGenerationProps": {
+                "forceDarkMode": false,
+                "harmonizeThreshold": 100,
+                "harmony": 0.6,
+                "termFgBoost": 0.35
+            }
+        },
+        "wrappedFrameThickness": 11
+    },
+    "apps": {
+        "bluetooth": "kcmshell6 kcm_bluetooth",
+        "manageUser": "kcmshell6 kcm_users",
+        "network": "kcmshell6 kcm_networkmanagement",
+        "networkEthernet": "kcmshell6 kcm_networkmanagement",
+        "taskManager": "plasma-systemmonitor --page-name Processes",
+        "terminal": "kitty -1",
+        "update": "kitty -1 --hold=yes fish -i -c 'pkexec pacman -Syu'",
+        "volumeMixer": "~/.config/hypr/hyprland/scripts/launch_first_available.sh \"pavucontrol-qt\" \"pavucontrol\""
+    },
+    "audio": {
+        "protection": {
+            "enable": false,
+            "maxAllowed": 150,
+            "maxAllowedIncrease": 10
+        }
+    },
+    "background": {
+        "activeWidgets": [
+            {
+                "id": "widget_clock_cookie_1788983640733",
+                "lockBehavior": "lockOnly",
+                "placementStrategy": "free",
+                "positions": {
+                    "eDP-1": {
+                        "scale": 2,
+                        "x": 840,
+                        "y": 480
+                    }
+                },
+                "widgetId": "clock_cookie",
+                "x": 200,
+                "y": 200
+            }
+        ],
+        "animateWallpaperChanges": true,
+        "blurGradientExperiment": false,
+        "blurWhenWindowsOpen": true,
+        "blurWhenWindowsOpenRadius": 100,
+        "cheatsheetZoomOut": false,
+        "enable": true,
+        "gradientBlur": {
+            "direction": "right-to-left",
+            "enable": false,
+            "radius": 50
+        },
+        "hideWhenFullscreen": false,
+        "lightModeWallpaperPath": "$HOME/Pictures/Wallpapers/windows-11-day.jpg",
+        "lockscreenWallpaperPath": "$HOME/Pictures/Wallpapers/1204710.jpg",
+        "materialShapeScale": 1,
+        "materialShapeShadow": false,
+        "mediaMode": {
+            "backgroundAnimation": {
+                "enable": false,
+                "speedScale": 10
+            },
+            "backgroundBlurRadius": 120,
+            "backgroundOpacity": 50,
+            "backgroundShape": "Square",
+            "changeShellColor": false,
+            "crossfade": {
+                "durationSec": 3,
+                "enable": false
+            },
+            "enableBackgroundAnimation": true,
+            "lyricsOffsetMs": 0,
+            "musicVideo": {
+                "dimBackground": true,
+                "dimOpacity": 60,
+                "enable": false,
+                "maxResolution": 1080,
+                "searchSuffix": "official music video",
+                "videoSamplingInterval": 200
+            },
+            "showLyrics": true,
+            "showPlayerSwitcher": true,
+            "showSeekBar": true,
+            "showVolumeSlider": true,
+            "syllable": {
+                "textHighlightStyle": 0
+            },
+            "togglePerMonitor": false,
+            "visualizerMode": 1
+        },
+        "overviewBackgroundStyle": "card-lift",
+        "overviewZoomOut": false,
+        "parallax": {
+            "autoVertical": false,
+            "enableSidebar": false,
+            "enableWorkspace": false,
+            "intensity": 4,
+            "invertHorizontal": false,
+            "invertVertical": false,
+            "loop": false,
+            "vertical": false,
+            "widgetsFactor": 1.2,
+            "workspaceZoom": 1
+        },
+        "scaleLargeWallpapers": false,
+        "useSeparateLightModeWallpaper": false,
+        "useSeparateLockscreenWallpaper": false,
+        "useWallpaperEngine": false,
+        "wallpaperAnimation": "random",
+        "wallpaperEngineAssetsPath": "",
+        "wallpaperEngineId": "1321607678",
+        "wallpaperPath": "$HOME/Pictures/Wallpapers/bioluminescence-3840x2160-25836.jpg",
+        "widgets": {
+            "ai_chat": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "android_search_bar": {
+                "action1": "music_rec",
+                "action2": "ai_chat",
+                "action3": "search",
+                "aspectRatio": "0.5x2",
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "at_a_glance": {
+                "animateContent": true,
+                "calendarWindowMinutes": 60,
+                "dualColumnMode": false,
+                "enable": false,
+                "enableCalendar": true,
+                "enableEmail": true,
+                "enableKdeConnect": true,
+                "enableLocalSend": true,
+                "enableMedia": true,
+                "enableSports": false,
+                "enableTodo": true,
+                "enableWeather": true,
+                "placementStrategy": "free",
+                "servicePriority": [
+                    "media",
+                    "calendar",
+                    "sports",
+                    "todo",
+                    "email",
+                    "localsend",
+                    "kdeconnect",
+                    "fallback"
+                ],
+                "showLocation": true,
+                "showSeparators": true,
+                "showServiceLabel": false,
+                "sportsWindowHours": 12,
+                "widgetSize": 100,
+                "widthCells": 3,
+                "x": 400,
+                "y": 100
+            },
+            "bluetooth_battery": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "bluetooth_earbuds_stem": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "bluetooth_fill_cards": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "bluetooth_headphone": {
+                "enable": false,
+                "expressiveColors": false,
+                "halfSize": true,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "bluetooth_headphone_cookie": {
+                "enable": false,
+                "expressiveColors": false,
+                "materialShape": "Cookie12Sided",
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "bluetooth_pill": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "calendar_agenda": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "calendar_grid": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "calendar_minimal": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "calendar_next_event": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "calendar_pill": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "calendar_upcoming_3days": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "circle_pointer_clock": {
+                "boldFont": true,
+                "enable": false,
+                "enableGlassReflection": false,
+                "placementStrategy": "free",
+                "showDots": true,
+                "useBlackBg": false,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "circular_media": {
+                "enable": false,
+                "enableGlassReflection": true,
+                "enableShadows": false,
+                "placementStrategy": "free",
+                "progressShape": "Cookie9Sided",
+                "showDevicePill": true,
+                "showNextButton": true,
+                "showPrevButton": true,
+                "useAlbumColors": true,
+                "widgetSize": 100,
+                "x": 249.21,
+                "y": 612.92
+            },
+            "clock_cookie": {
+                "aiStyling": false,
+                "aiStylingModel": "gemini",
+                "backgroundShape": "Arch",
+                "backgroundStyle": "cookie",
+                "constantlyRotate": false,
+                "dateInClock": true,
+                "dateStyle": "bubble",
+                "dialNumberStyle": "full",
+                "disableAnimationOnLock": false,
+                "enable": false,
+                "hourHandStyle": "classic",
+                "hourMarks": false,
+                "minuteHandStyle": "classic",
+                "placementStrategy": "free",
+                "quoteEnable": false,
+                "quoteText": "",
+                "secondHandStyle": "line",
+                "sides": 12,
+                "timeIndicators": true,
+                "x": 1518.98,
+                "y": 168.8
+            },
+            "clock_dial": {
+                "enable": false,
+                "enableInnerShadow": false,
+                "enableShadows": false,
+                "expressiveColors": false,
+                "hourHandStyle": "fill",
+                "minuteHandStyle": "medium",
+                "placementStrategy": "free",
+                "secondHandStyle": "dot",
+                "showMinuteHand": true,
+                "showNumberRing": false,
+                "showSecondHand": false,
+                "showTicks": true,
+                "x": 200,
+                "y": 200
+            },
+            "clock_digital": {
+                "adaptiveAlignment": true,
+                "animateChange": true,
+                "colorful": false,
+                "enable": false,
+                "font": {
+                    "roundness": 0,
+                    "size": 90,
+                    "weight": 350,
+                    "width": 100
+                },
+                "placementStrategy": "free",
+                "quoteEnable": false,
+                "quoteText": "",
+                "showColon": true,
+                "showDate": true,
+                "vertical": false,
+                "x": 200,
+                "y": 200
+            },
+            "clock_expressive_card": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "clock_flex": {
+                "enable": false,
+                "placementStrategy": "free",
+                "useAltColors": false,
+                "widgetSize": 125,
+                "x": 200,
+                "y": 200
+            },
+            "clock_hori": {
+                "enable": false,
+                "placementStrategy": "free",
+                "useAltColors": false,
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "clock_nagasaki": {
+                "enable": false,
+                "monochrome": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "clock_nothing": {
+                "enable": false,
+                "placementStrategy": "free",
+                "showAmPmChip": true,
+                "showDate": true,
+                "showTopLabel": true,
+                "use24h": true,
+                "useAccentColor": false,
+                "x": 200,
+                "y": 200
+            },
+            "clock_word": {
+                "backgroundShape": "Circle",
+                "backgroundStyle": "shape",
+                "enable": false,
+                "placementStrategy": "free",
+                "size": 240,
+                "x": 200,
+                "y": 200
+            },
+            "colorScheme": "expressive_primary",
+            "compact_media": {
+                "backgroundShape": "Rectangle",
+                "dynamicAlbumColors": false,
+                "enable": false,
+                "enableInnerShadow": false,
+                "enableShadows": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "concentric_clock": {
+                "boldFont": false,
+                "bottomSubDialContent": "weather_temp",
+                "dialMarginOffset": 3,
+                "dialStyle": "concentric",
+                "enable": false,
+                "enableGlassReflection": false,
+                "enableShadows": false,
+                "frameStyle": "none",
+                "hourFontRound": 100,
+                "hourFontWeight": 600,
+                "hourFontWidth": 85,
+                "hourHandStyle": "hide",
+                "hourPixelSize": 30,
+                "minuteHandStyle": "hide",
+                "minutePillLeftMargin": 67,
+                "minuteStyle": "pill_horizontal",
+                "placementStrategy": "free",
+                "quoteEnable": false,
+                "quoteText": "",
+                "secondHandStyle": "hide",
+                "showArc24h": false,
+                "showHourMarks": false,
+                "showHourSubDial": false,
+                "showHourText": true,
+                "showMinuteDot": false,
+                "showSunsetDial": false,
+                "subdialMarginOffset": 5,
+                "use24h": true,
+                "useBlackBg": false,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "dark_mode_pill": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "date": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 100,
+                "y": 100
+            },
+            "devices_battery_list": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "devices_battery_list_1x1": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "easy_effects_pill": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "email_inbox": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "email_inbox_2x1": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "enableGrid": true,
+            "enableInnerShadow": true,
+            "enableShadows": true,
+            "enableSnap": true,
+            "gridStep": 0,
+            "grid_card_clock": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "lightweightPreviews": true,
+            "lockWidgetPositions": false,
+            "media": {
+                "backgroundShape": "Cookie12Sided",
+                "dynamicAlbumColors": false,
+                "enable": false,
+                "glow": {
+                    "brightness": 10,
+                    "enable": true
+                },
+                "hideAllButtons": false,
+                "placementStrategy": "free",
+                "rotateAlbumArt": true,
+                "showArtist": true,
+                "showPreviousToggle": true,
+                "showProgressSlider": true,
+                "showTimeInfo": true,
+                "style": "circular",
+                "tintArtCover": true,
+                "useAlbumColors": true,
+                "visualizer": {
+                    "blur": 1,
+                    "enable": false,
+                    "opacity": 0.15,
+                    "smoothing": 2
+                },
+                "x": 354.11234375000015,
+                "y": 386.1075000000001
+            },
+            "media_cd": {
+                "dynamicAlbumColors": false,
+                "enable": false,
+                "enableInnerShadow": false,
+                "enableShadows": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "mic_pill": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "mobile_battery": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "month_clock": {
+                "boldFont": true,
+                "enable": false,
+                "enableGlassReflection": false,
+                "hourHandStyle": "fill",
+                "minuteHandStyle": "medium",
+                "placementStrategy": "free",
+                "secondHandStyle": "line",
+                "showDayPill": true,
+                "showDayRing": true,
+                "showMonthPill": true,
+                "showMonthRing": true,
+                "showTickMarks": true,
+                "showWeekPill": true,
+                "showWeekRing": true,
+                "useBlackBg": true,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "nagasaki_text": {
+                "enable": false,
+                "placementStrategy": "free",
+                "size": 200,
+                "x": 200,
+                "y": 200
+            },
+            "notes_widget": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "notes_widget_2x1": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "nothing_ring_media": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "nothing_weather_circle": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "nothing_wheel_clock": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "pc_battery_bars": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "pc_battery_cable": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "photo": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "photo_1x1": {
+                "backgroundShape": "Cookie9Sided",
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "photo_minimal_temp_2x1": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "showOverlay": true,
+                "x": 200,
+                "y": 200
+            },
+            "photo_pill_2x1": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "showOverlay": true,
+                "x": 200,
+                "y": 200
+            },
+            "photo_weather_2x1": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "showOverlay": true,
+                "x": 200,
+                "y": 200
+            },
+            "quick_actions": {
+                "bottomButton1": "translator",
+                "bottomButton2": "phone",
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "quote": {
+                "enable": false,
+                "expressiveColors": false,
+                "fontSize": 16,
+                "placementStrategy": "free",
+                "quoteText": "",
+                "x": 200,
+                "y": 200
+            },
+            "resource_cpu_pill": {
+                "aspectRatio": "2x0.5",
+                "enable": false,
+                "placementStrategy": "free",
+                "showDetails": true,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "resource_disk_pill": {
+                "aspectRatio": "2x0.5",
+                "enable": false,
+                "placementStrategy": "free",
+                "showDetails": true,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "resource_fill_cards": {
+                "enable": false,
+                "enableCpu": true,
+                "enableDisk": true,
+                "enableRam": true,
+                "orientation": "horizontal",
+                "placementStrategy": "free",
+                "widgetSize": 84,
+                "x": 400,
+                "y": 100
+            },
+            "resource_ram_pill": {
+                "aspectRatio": "2x0.5",
+                "enable": false,
+                "placementStrategy": "free",
+                "showDetails": true,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "scallop_dot_clock": {
+                "boldFont": true,
+                "enable": false,
+                "enableGlassReflection": false,
+                "placementStrategy": "free",
+                "showDots": true,
+                "showHourHand": true,
+                "showMinuteBubble": true,
+                "useBlackBg": false,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "scallop_number_clock": {
+                "boldFont": true,
+                "enable": false,
+                "enableGlassReflection": false,
+                "placementStrategy": "free",
+                "showDots": true,
+                "showHourHand": true,
+                "showMinuteBubble": true,
+                "useBlackBg": false,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "screen_record_pill": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "search_pill": {
+                "action1": "ai_chat",
+                "action2": "music_rec",
+                "action3": "search",
+                "aiLogo": "gemini",
+                "aspectRatio": "0.5x2",
+                "enable": false,
+                "outerLeftIcon": "spark",
+                "placementStrategy": "free",
+                "useMaterialSymbolForOuterLeftIcon": false,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "showOnlyOnSingleMonitor": false,
+            "targetMonitor": "",
+            "tintOpacity": 0.55,
+            "tintOpacityEnabled": false,
+            "triple_ring_clock": {
+                "boldFont": true,
+                "enable": false,
+                "enableGlassReflection": false,
+                "placementStrategy": "free",
+                "useBlackBg": false,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "volume_mute_pill": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "water_reminder": {
+                "dailyGoal": 8,
+                "enable": false,
+                "expressiveColors": false,
+                "intervalHours": 2,
+                "placementStrategy": "free",
+                "reminderText": "Time to hydrate! \ud83d\udca7",
+                "x": 200,
+                "y": 200
+            },
+            "wearos_arc_clock": {
+                "blackBackground": false,
+                "bottomComplication": "calendar",
+                "enable": false,
+                "enableBackgroundPattern": true,
+                "enableGlassReflection": true,
+                "enableShadows": false,
+                "leftComplication": "weather",
+                "placementStrategy": "free",
+                "rightComplication": "battery",
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "wearos_clock": {
+                "enable": false,
+                "enableGlassReflection": true,
+                "enableShadows": false,
+                "placementStrategy": "free",
+                "showBatteryPill": true,
+                "showBedtimeIcon": true,
+                "showBezelRing": true,
+                "showDateComplication": true,
+                "showDigitalTimePill": true,
+                "showDistroLogo": true,
+                "showHourSubDial": true,
+                "showInnerNumbers": true,
+                "showKdeConnect": true,
+                "showMinuteHand": true,
+                "showOuterNumbers": true,
+                "showSunsetComplication": true,
+                "useAlbumColors": true,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 100
+            },
+            "weather": {
+                "backgroundShape": "Cookie9Sided",
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "least_busy",
+                "style": "default",
+                "x": -17.33984375,
+                "y": 492.51171875
+            },
+            "weather_card": {
+                "enable": false,
+                "expressiveColors": true,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "weather_circle": {
+                "enable": false,
+                "expressiveColors": true,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "weather_forecast": {
+                "enable": false,
+                "expressiveColors": true,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "weather_hourly": {
+                "enable": false,
+                "expressiveColors": true,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "weather_icon": {
+                "backgroundShape": "Cookie12Sided",
+                "enable": false,
+                "expressiveColors": true,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "weather_pill": {
+                "enable": false,
+                "expressiveColors": true,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "weather_typography": {
+                "enable": false,
+                "expressiveColors": true,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "widgetsScale": 1,
+            "wifi_pill": {
+                "enable": false,
+                "expressiveColors": false,
+                "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            }
+        },
+        "windowZoomLiveCapture": false,
+        "windowZoomOnOverview": false,
+        "workspaceBlur": false,
+        "wpeDisableMouse": false,
+        "wpeDisableParallax": false,
+        "wpeFps": 15,
+        "wpeNoAudioProcessing": false,
+        "wpeNoAutoMute": false,
+        "wpeNoFullscreenPause": false,
+        "wpePauseWhenWindowsOpen": true,
+        "wpeScaling": "stretch",
+        "wpeScreenSpan": "",
+        "wpeSilent": true,
+        "wpeVolume": 50,
+        "zoomOutEnabled": false,
+        "zoomOutStyle": 1
+    },
+    "bar": {
+        "activeWindow": {
+            "animateTransition": true,
+            "customSize": 225,
+            "fixedSize": false,
+            "showOnAllMonitors": false
+        },
+        "aiPlanUsage": {
+            "autoRefresh": true,
+            "claudeNetworkEnabled": true,
+            "enabled": true,
+            "enabledProviders": [
+                "chatgpt",
+                "claude",
+                "antigravity"
+            ],
+            "hideWhenUnavailable": false,
+            "lowRemainingThreshold": 20,
+            "percentMode": "remaining",
+            "refreshInterval": 300000,
+            "showWindowLabel": false,
+            "visualization": "resource"
+        },
+        "autoHide": {
+            "enable": false,
+            "hoverDelay": 0,
+            "hoverRegionWidth": 2,
+            "mode": "instant",
+            "pushWindows": false,
+            "showWhenPressingSuper": {
+                "delay": 140,
+                "enable": true
+            }
+        },
+        "barBackgroundStyle": 3,
+        "barGroupStyle": 1,
+        "battery": {
+            "colorByPowerProfile": true,
+            "secondaryOpposite": true,
+            "showPercentage": "left",
+            "showPercentageInsideBattery": false,
+            "showPrimary": true,
+            "showSecondary": true,
+            "swapPrimaryWithSecondary": false
+        },
+        "bluetoothDevicesLayout": "classic",
+        "borderless": false,
+        "bottom": false,
+        "clock": {
+            "secondaryOpposite": false,
+            "showPrimary": true,
+            "showSecondary": true,
+            "showSeconds": false,
+            "swapPrimaryWithSecondary": false
+        },
+        "clockWidget": {
+            "colorMode": "tonal",
+            "neuralVariant": "orbit",
+            "reliefVariant": "split",
+            "showMeridiem": true
+        },
+        "cornerStyle": 1,
+        "dashboardButton": {
+            "orbVariant": "filled",
+            "showAlarms": true,
+            "showBluetooth": true,
+            "showCaffeine": true,
+            "showCountdowns": true,
+            "showDns": true,
+            "showEasyEffects": false,
+            "showGameMode": true,
+            "showMic": true,
+            "showMusicRecognition": true,
+            "showNetwork": true,
+            "showNotifications": true,
+            "showPomodoro": true,
+            "showPowerProfile": false,
+            "showStopwatch": true,
+            "showTailscale": true,
+            "showVolume": true,
+            "showVpn": true
+        },
+        "dateWidget": {
+            "colorMode": "tonal",
+            "expressiveVariant": "stack",
+            "neuralVariant": "orbit",
+            "showYear": false,
+            "uppercase": true
+        },
+        "dropShadow": true,
+        "dynamicIsland": {
+            "notchMode": {
+                "enable": false,
+                "expandAnimDuration": 250,
+                "fadeDelay": 0,
+                "overlapApps": false,
+                "visibleWidgets": []
+            }
+        },
+        "dynamicIslandLoadBalance": true,
+        "dynamicIslandSpacingHorizontal": 48,
+        "dynamicIslandSpacingVertical": 45,
+        "enableBrightnessScroll": false,
+        "enableVolumeScroll": false,
+        "expressiveColorTheme": "content",
+        "expressiveColors": false,
+        "expressiveGroupColor": false,
+        "floatStyleShadow": true,
+        "floatingNotch": {
+            "autoHide": false,
+            "centerInBar": false,
+            "checklistAlwaysVisible": false,
+            "checklistOnlyExpanded": false,
+            "clickToExpand": false,
+            "disableAiStatus": false,
+            "disableAudio": false,
+            "disableBattery": false,
+            "disableBluetooth": false,
+            "disableCalendar": false,
+            "disableChecklist": false,
+            "disableClipboard": false,
+            "disableDictation": false,
+            "disableKdeConnectInLocalSend": false,
+            "disableKeyboard": false,
+            "disableLocalSend": false,
+            "disableMedia": false,
+            "disableNotification": false,
+            "disableOsd": false,
+            "disableProgress": false,
+            "disableRecording": false,
+            "disableTimer": false,
+            "disableWifi": false,
+            "disableWorkspaces": false,
+            "dropShadow": true,
+            "enable": false,
+            "extraCompact": false,
+            "heightAiStatus": 36,
+            "heightAudio": 36,
+            "heightBattery": 36,
+            "heightBluetooth": 60,
+            "heightCalendar": 48,
+            "heightChecklist": 36,
+            "heightClipboard": 36,
+            "heightDictation": 44,
+            "heightHome": 36,
+            "heightKeyboard": 36,
+            "heightLocalSend": 42,
+            "heightMedia": 52,
+            "heightNotification": 60,
+            "heightProgress": 48,
+            "heightRecording": 36,
+            "heightTimer": 36,
+            "heightWifi": 36,
+            "heightWorkspaces": 36,
+            "onlyShowOnSingleMonitor": false,
+            "singleMonitorName": ""
+        },
+        "indicators": {
+            "notifications": {
+                "showUnreadCount": true
+            },
+            "record": {
+                "animateDigits": true,
+                "colorMode": "alert",
+                "expressiveVariant": "capsule",
+                "minimal": false,
+                "neuralVariant": "duo",
+                "showLabel": true
+            }
+        },
+        "keyboardLayout": {
+            "secondaryOpposite": false,
+            "showPrimary": true,
+            "showSecondary": true,
+            "swapPrimaryWithSecondary": false,
+            "uppercaseLayout": false
+        },
+        "layouts": {
+            "center": [
+                {
+                    "centered": false,
+                    "id": "clock",
+                    "visible": true
+                },
+                {
+                    "centered": false,
+                    "id": "shell_update_indicator",
+                    "visible": false
+                },
+                {
+                    "centered": false,
+                    "id": "workspaces",
+                    "visible": true
+                },
+                {
+                    "centered": false,
+                    "id": "utility_buttons",
+                    "visible": true
+                }
+            ],
+            "left": [
+                {
+                    "centered": false,
+                    "id": "policies_panel_button",
+                    "visible": true
+                },
+                {
+                    "centered": false,
+                    "id": "weather",
+                    "visible": true
+                },
+                {
+                    "centered": false,
+                    "id": "system_monitor",
+                    "visible": true
+                },
+                {
+                    "centered": false,
+                    "id": "dictation_indicator",
+                    "visible": true
+                },
+                {
+                    "centered": false,
+                    "id": "record_indicator",
+                    "visible": false
+                },
+                {
+                    "centered": false,
+                    "id": "mode_indicator",
+                    "visible": false
+                }
+            ],
+            "right": [
+                {
+                    "centered": false,
+                    "id": "system_tray",
+                    "visible": true
+                },
+                {
+                    "centered": false,
+                    "id": "battery",
+                    "visible": true
+                },
+                {
+                    "centered": false,
+                    "id": "dashboard_panel_button",
+                    "visible": true
+                },
+                {
+                    "centered": false,
+                    "id": "power",
+                    "visible": true
+                }
+            ]
+        },
+        "mediaPlayer": {
+            "artwork": {
+                "enable": false
+            },
+            "customSize": 250,
+            "enableVolumeScroll": false,
+            "expressivePopup": false,
+            "lyrics": {
+                "customSize": 300,
+                "enable": false,
+                "style": "scroller",
+                "useGradientMask": true
+            },
+            "maxSize": 400,
+            "popupStyle": "default",
+            "useFixedSize": true
+        },
+        "onlyShowOnSingleMonitor": false,
+        "portWatcher": {
+            "autoRefresh": true,
+            "enabled": true,
+            "exposedOnly": false,
+            "hideWhenEmpty": false,
+            "ignorePorts": "",
+            "ignoreProcesses": "",
+            "maxPort": 32767,
+            "minPort": 1,
+            "notifyNewExposed": false,
+            "refreshInterval": 5000,
+            "showLoopback": true,
+            "showSystem": false,
+            "showTcp": true,
+            "showUdp": true,
+            "sortMode": "port",
+            "watchPorts": ""
+        },
+        "privacyPill": {
+            "collapseToDot": true,
+            "enabled": true,
+            "expandDuration": 4000,
+            "ignoreApps": "",
+            "pollInterval": 1200,
+            "showAppNames": true,
+            "watchCamera": true,
+            "watchLocation": false,
+            "watchMicrophone": true,
+            "watchScreen": true
+        },
+        "resources": {
+            "alwaysShowCpu": true,
+            "alwaysShowCpuTemp": true,
+            "alwaysShowDisk": false,
+            "alwaysShowRam": true,
+            "alwaysShowSwap": true,
+            "cpuWarningThreshold": 90,
+            "expressivePopup": true,
+            "memoryWarningThreshold": 95,
+            "showDocker": false,
+            "showPercentageText": true,
+            "swapWarningThreshold": 85
+        },
+        "screenList": [],
+        "searchWidget": {
+            "colorMode": "tonal",
+            "showShortcutHint": true,
+            "sizeMode": "compact"
+        },
+        "singleMonitorName": "",
+        "sizes": {
+            "height": 40,
+            "width": 44
+        },
+        "sports": {
+            "activeGameId": "401913077",
+            "customOrder": [],
+            "enable": false,
+            "maxCardsPopup": 4,
+            "monitoredLeagues": [
+                {
+                    "enabled": true,
+                    "league": "bra.1",
+                    "name": "Brasileir\u00e3o",
+                    "sport": "soccer"
+                },
+                {
+                    "enabled": true,
+                    "league": "eng.1",
+                    "name": "Premier League",
+                    "sport": "soccer"
+                },
+                {
+                    "enabled": true,
+                    "league": "uefa.champions",
+                    "name": "Champions League",
+                    "sport": "soccer"
+                },
+                {
+                    "enabled": true,
+                    "league": "nba",
+                    "name": "NBA",
+                    "sport": "basketball"
+                },
+                {
+                    "enabled": false,
+                    "league": "f1",
+                    "name": "Formula 1",
+                    "sport": "racing"
+                }
+            ],
+            "showAfterMinutes": 180,
+            "showBRA": true,
+            "showBUND": false,
+            "showBeforeHours": 12,
+            "showCL": true,
+            "showCLA": true,
+            "showEPL": true,
+            "showLIG1": false,
+            "showLIGA": true,
+            "showSERA": false,
+            "showUECL": false,
+            "showUEL": false,
+            "showWC": true,
+            "showWWC": false,
+            "teamFilter": "",
+            "updateInterval": 60
+        },
+        "styles": {
+            "activeWindow": "default",
+            "aiPlanUsage": "expressive",
+            "battery": "default",
+            "bluetooth": "expressive",
+            "clock": "material",
+            "dashboard": "expressive",
+            "date": "default",
+            "keyboard": "expressive",
+            "media": "expressive",
+            "notification": "default",
+            "policies": "expressive",
+            "portWatcher": "expressive",
+            "power": "expressive",
+            "recordIndicator": "expressive",
+            "resources": "expressive",
+            "search": "default",
+            "sports": "expressive",
+            "systray": "default",
+            "timer": "expressive",
+            "utilButtons": "expressive",
+            "weather": "default",
+            "workspaces": "default"
+        },
+        "timers": {
+            "showCountdowns": true,
+            "showPomodoro": true,
+            "showStopwatch": true
+        },
+        "tooltips": {
+            "clickToShow": true,
+            "closeDelay": 0,
+            "compactPopups": false,
+            "enableBluetoothConnectionPopup": true,
+            "enableColorPickerPopup": true,
+            "enableKeyboardLayoutTransitionPopup": false,
+            "enablePopups": true,
+            "enableTooltips": true,
+            "popupScaleMultiplier": 0.9
+        },
+        "topLeftIcon": "distro",
+        "transparentGlow": true,
+        "useMaterialSymbolForTopLeftIcon": false,
+        "utilButtons": {
+            "isRecording": false,
+            "showColorPicker": true,
+            "showDarkModeToggle": false,
+            "showKeyboardToggle": false,
+            "showMicToggle": false,
+            "showPerformanceProfileToggle": true,
+            "showScreenRecord": true,
+            "showScreenSnip": false,
+            "showWallpaperToggle": false
+        },
+        "verbose": true,
+        "vertical": false,
+        "weather": {
+            "enable": true,
+            "fetchInterval": 15,
+            "useUSCS": false
+        },
+        "weatherWidget": {
+            "colorMode": "tonal",
+            "horizonVariant": "balanced",
+            "tesseraVariant": "paired"
+        },
+        "workspaces": {
+            "activeIndicatorOpacity": 100,
+            "activeIndicatorShape": "Heart",
+            "alwaysShowNumbers": false,
+            "autoCompact": true,
+            "autoCompactCurrentGap": "onswitch",
+            "autoCompactDelay": 100,
+            "dockHoverEffect": true,
+            "dockShowActiveIndicator": true,
+            "dockShowAppIcons": true,
+            "dockShowWindowDots": true,
+            "dynamicWorkspaces": false,
+            "maxWindowCount": 3,
+            "monochromeIcons": false,
+            "numberMap": [],
+            "showAppIcons": true,
+            "showNumberDelay": 100,
+            "shown": 10,
+            "useDirectionArrowForActiveIndicator": false,
+            "useMaterialShapeForActiveIndicator": true,
+            "useNerdFont": false,
+            "useRandomShapeForActiveIndicator": true,
+            "useWorkspaceMap": false,
+            "workspaceMap": [
+                0,
+                10
+            ]
+        }
+    },
+    "battery": {
+        "automaticSuspend": false,
+        "critical": 5,
+        "full": 101,
+        "low": 15,
+        "notifyCharged": false,
+        "showPercentage": "left",
+        "style": "windows11",
+        "suspend": 3,
+        "suspendWarningSeconds": 30
+    },
+    "bluetooth": {
+        "budsLink": {
+            "enabled": true,
+            "preferBudsLink": true,
+            "showBatteryBreakdown": true,
+            "showControlsInBarPopup": true,
+            "showControlsInConnectionPopup": true,
+            "showEnhancedSettingsCard": true,
+            "showIntegrationNotices": true
+        }
+    },
+    "calendar": {
+        "holidays": {
+            "countryCode": "auto",
+            "enable": true,
+            "showInMonthView": true
+        },
+        "locale": "en-GB",
+        "timetable": {
+            "birthdays": {
+                "enable": false
+            },
+            "defaultCalendar": "",
+            "googleColors": {
+                "enable": false,
+                "refreshHours": 6
+            },
+            "imports": {
+                "enable": true,
+                "gmailIcs": {
+                    "enable": false,
+                    "maxMessages": 25,
+                    "scanIntervalMinutes": 60
+                },
+                "outlook": {
+                    "enable": false,
+                    "icsAttachments": {
+                        "enable": false,
+                        "maxMessages": 25,
+                        "scanIntervalMinutes": 60
+                    },
+                    "syncIntervalMinutes": 60
+                }
+            },
+            "moonPhases": {
+                "enable": false
+            },
+            "notifications": {
+                "dailySummary": false,
+                "dailySummaryTime": "08:00",
+                "enable": false,
+                "notifyAllDay": true,
+                "offsets": [
+                    "-15m"
+                ],
+                "sound": false
+            },
+            "proximityColorGradient": true,
+            "sportsEvents": false,
+            "subscriptions": [
+                "https://ade-uga-ro-vs.grenet.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=46796&projectId=2&calType=ical&firstDate=2026-09-03&lastDate=2027-01-08"
+            ],
+            "upcomingHorizonDays": 14
+        }
+    },
+    "cheatsheet": {
+        "aminoAcidScheme": "seven",
+        "commandsTagsSidebar": false,
+        "enableAminoAcids": true,
+        "enableCommands": false,
+        "enableGmail": false,
+        "enablePeriodicTable": false,
+        "enableTimetable": true,
+        "enableTypingTest": true,
+        "enableWorkspaceProfiles": false,
+        "filterUnbinds": false,
+        "fontSize": {
+            "comment": 12,
+            "key": 12
+        },
+        "keepLastTabLoaded": true,
+        "splitButtons": false,
+        "superKey": "\udb82\udcc7",
+        "timetableTodayFirst": false,
+        "useFnSymbol": false,
+        "useMacSymbol": false,
+        "useMouseSymbol": false
+    },
+    "configVersion": 19,
+    "conflictKiller": {
+        "autoKillNotificationDaemons": false,
+        "autoKillTrays": true
+    },
+    "crosshair": {
+        "code": ""
+    },
+    "dictation": {
+        "alwaysShowIndicator": true,
+        "enabled": true,
+        "language": "auto",
+        "maxDurationSecs": 60,
+        "notifyOnTranscription": false,
+        "outputMode": "paste",
+        "pauseMedia": true,
+        "punctuationHint": "",
+        "quality": "accurate",
+        "showInIsland": true,
+        "showIndicator": true,
+        "soundFeedback": false,
+        "threads": 0,
+        "translateToEnglish": false,
+        "typeDelayMs": 5
+    },
+    "dnsOverTls": {
+        "enabled": false,
+        "fallbackAddress": "94.140.15.15",
+        "preset": "adguard",
+        "reapplyOnNetworkChange": false,
+        "routeAllQueries": true,
+        "serverAddress": "94.140.14.14",
+        "serverName": "dns.adguard-dns.com",
+        "strict": true
+    },
+    "dock": {
+        "dimInactiveIcons": false,
+        "dockRadius": 10,
+        "dockStyle": "floating",
+        "enable": true,
+        "enableAppGroups": false,
+        "enableAppTooltip": false,
+        "enableMagnification": false,
+        "enablePreview": true,
+        "enableShapeMask": false,
+        "height": 46,
+        "hoverRegionHeight": 2,
+        "hoverToReveal": false,
+        "iconSpacing": 1,
+        "islandSpacing": 8,
+        "islandsStyle": false,
+        "isolateMonitors": false,
+        "magnificationCurve": "cosine",
+        "magnificationDynamicSpacing": true,
+        "magnificationInfluenceRadius": 2.35,
+        "magnificationMotion": "fast",
+        "magnificationScale": 1.5,
+        "manualOrder": [],
+        "monochromeIcons": false,
+        "pinnedOnStartup": false,
+        "position": "bottom",
+        "shapeMask": "Circle",
+        "showDividers": false,
+        "showNotificationBadges": true,
+        "showOnlyOnFocusedMonitor": false,
+        "smartGrouping": false,
+        "widgetRadius": 10
+    },
+    "dockToPanel": {
+        "alignToWorkspace": false,
+        "buttonSpacing": 2,
+        "enableMacOsMagnification": false,
+        "enablePreview": false,
+        "enableTooltip": false,
+        "enableWorkspaceScroll": false,
+        "iconSize": 25,
+        "isolateMonitors": false,
+        "macOsMagnificationScale": 1.6
+    },
+    "hacks": {
+        "arbitraryRaceConditionDelay": 20
+    },
+    "hyprland": {
+        "advancedSettings": false,
+        "defaultHyprlandLayout": "default"
+    },
+    "idle": {
+        "extendMinutes": 15,
+        "notifyOnExpiry": true,
+        "persistInhibit": "session",
+        "quickDurations": [
+            15,
+            30,
+            60
+        ],
+        "warnLeadSec": 60
+    },
+    "interactions": {
+        "deadPixelWorkaround": {
+            "enable": false
+        },
+        "scrolling": {
+            "fasterTouchpadScroll": true,
+            "mouseScrollDeltaThreshold": 120,
+            "mouseScrollFactor": 120,
+            "touchpadScrollFactor": 100
+        },
+        "touchGestures": {
+            "bindings": {
+                "bottomEdge": "overview",
+                "bottomLeftCorner": "none",
+                "bottomRightCorner": "osk",
+                "leftEdge": "sidebarLeft",
+                "rightEdge": "sidebarRight",
+                "topEdge": "cheatsheet",
+                "topLeftCorner": "none",
+                "topRightCorner": "none"
+            },
+            "commitDistance": 110,
+            "cooldownMs": 250,
+            "cornerSize": 72,
+            "directionTolerance": 35,
+            "disableInFullscreen": false,
+            "disableInMediaMode": true,
+            "edgeWidth": 24,
+            "enable": false,
+            "includeStylus": false,
+            "minDistance": 44,
+            "multiFinger": {
+                "distance": 90,
+                "enable": true,
+                "fingers": 3,
+                "swipeDown": "sidebarRight",
+                "swipeLeft": "workspaceNext",
+                "swipeRight": "workspacePrev",
+                "swipeUp": "appDrawer"
+            },
+            "targetMonitor": "auto",
+            "transform": "auto",
+            "velocityThreshold": 650,
+            "visualFeedback": true
+        }
+    },
+    "language": {
+        "translator": {
+            "defaultSourceLanguage": "auto",
+            "defaultTargetLanguage": "auto",
+            "engine": "auto",
+            "sourceLanguage": "English",
+            "targetLanguage": "Fran\u00e7ais"
+        },
+        "ui": "auto"
+    },
+    "launcher": {
+        "pinnedApps": [
+            "org.kde.dolphin",
+            "kitty",
+            "cmake-gui"
+        ],
+        "typeToSearch": {
+            "enable": true,
+            "keys": "all",
+            "trigger": "emptyWorkspace"
+        }
+    },
+    "light": {
+        "antiFlashbang": {
+            "enable": false
+        },
+        "darkMode": {
+            "automatic": false,
+            "from": "21:00",
+            "to": "07:00"
+        },
+        "gamma": {
+            "dimBelowMinimum": false
+        },
+        "keyboardBacklight": {
+            "autoOff": true,
+            "timeout": 30
+        },
+        "night": {
+            "automatic": false,
+            "colorTemperature": 4995,
+            "from": "19:00",
+            "persistManual": "session",
+            "to": "06:30"
+        }
+    },
+    "localsend": {
+        "autoStart": false,
+        "downloadPath": "$HOME/Downloads/localsend",
+        "preferPopupOverNotification": true,
+        "showNotifications": true
+    },
+    "lock": {
+        "blur": {
+            "enable": true,
+            "extraZoom": 1,
+            "radius": 100
+        },
+        "centerAlignment": "vertical",
+        "centerSpacing": 20,
+        "colorWash": {
+            "amount": 0.5,
+            "enable": false
+        },
+        "desaturate": {
+            "amount": 1,
+            "enable": false
+        },
+        "islands": {
+            "hidden": [],
+            "left": [
+                "battery",
+                "capsLock",
+                "alarm",
+                "weather",
+                "keyboardLayout",
+                "keepAwake",
+                "mode"
+            ],
+            "main": [
+                "fingerprint",
+                "password",
+                "confirm"
+            ],
+            "right": [
+                "sleep",
+                "power",
+                "reboot"
+            ]
+        },
+        "launchOnStartup": false,
+        "materialShapeChars": true,
+        "notifications": {
+            "alwaysShowApps": [],
+            "defaultPolicy": "show",
+            "enable": true,
+            "filters": {
+                "criticalOverride": "full",
+                "skipLowUrgency": true,
+                "skipTransient": true
+            },
+            "maxShown": 5,
+            "neverShowApps": [],
+            "onlySinceLock": false,
+            "position": "top_left",
+            "privacy": "redacted",
+            "zoomPercent": 100
+        },
+        "nowPlaying": true,
+        "rippleEffect": false,
+        "security": {
+            "fingerprint": {
+                "enable": true,
+                "labels": [],
+                "showIndicator": true
+            },
+            "requirePasswordToPower": false,
+            "unlockKeyring": true
+        },
+        "showAlarm": true,
+        "showLockedText": true,
+        "showWeather": false,
+        "sports": false,
+        "touchKeyboard": {
+            "mode": "text",
+            "show": "auto"
+        },
+        "useHyprlock": false,
+        "vignette": {
+            "amount": 0.7,
+            "enable": false
+        },
+        "zoomAnimation": {
+            "enabled": true
+        }
+    },
+    "lyricsService": {
+        "enable": false,
+        "enableGenius": false,
+        "enableLrclib": false,
+        "enableYtmusic": false,
+        "lyricsProvider": "auto"
+    },
+    "media": {
+        "dynamicAlbumColors": true,
+        "filterDuplicatePlayers": true,
+        "priorityPlayer": ""
+    },
+    "mediaDownloader": {
+        "addChapters": true,
+        "audioBitrate": 0,
+        "audioCodec": "any",
+        "defaultFormat": "best",
+        "downloadPath": "$HOME/Videos/yt-dlp/",
+        "embedMetadata": true,
+        "enabled": true,
+        "extraArgs": "",
+        "keepHistory": false,
+        "lastUsedFormat": "best",
+        "lastUsedResolution": "best",
+        "maxConcurrent": 2,
+        "proxy": "",
+        "rateLimit": 0,
+        "showAdvancedArgs": false,
+        "throttleBypass": false,
+        "useAria2c": false,
+        "videoCodec": "any",
+        "videoResolution": "best",
+        "writeThumbnail": true
+    },
+    "modes": {
+        "enable": true,
+        "flash": "auto",
+        "game": {
+            "extraClasses": [],
+            "gpuThreshold": 45,
+            "holdSec": 20,
+            "useDesktopCategory": true,
+            "useGpuHeuristic": true,
+            "useLauncherClasses": true
+        },
+        "graceSec": 20,
+        "lastModeId": "new-mode",
+        "lastRoutineId": "pause-on-lock",
+        "lastTab": "modes",
+        "lockPill": true,
+        "modes": [
+            {
+                "actions": [
+                    {
+                        "type": "gameMode",
+                        "value": true
+                    },
+                    {
+                        "type": "dnd",
+                        "value": true
+                    },
+                    {
+                        "type": "powerProfile",
+                        "value": "performance"
+                    },
+                    {
+                        "type": "keepAwake",
+                        "value": true
+                    },
+                    {
+                        "type": "nightLight",
+                        "value": false
+                    }
+                ],
+                "auto": false,
+                "color": "blue",
+                "end": {
+                    "autoOffMin": 0,
+                    "notify": true,
+                    "revert": true,
+                    "strict": false
+                },
+                "icon": "sports_esports",
+                "id": "gaming",
+                "match": "any",
+                "name": "Gaming",
+                "notify": true,
+                "preset": true,
+                "triggers": [
+                    {
+                        "forSec": 0,
+                        "not": false,
+                        "type": "game",
+                        "when": "running"
+                    }
+                ]
+            },
+            {
+                "actions": [
+                    {
+                        "type": "dnd",
+                        "value": true
+                    },
+                    {
+                        "type": "keepAwake",
+                        "value": true
+                    },
+                    {
+                        "type": "powerProfile",
+                        "value": "balanced"
+                    }
+                ],
+                "auto": false,
+                "color": "purple",
+                "end": {
+                    "autoOffMin": 0,
+                    "notify": true,
+                    "revert": true,
+                    "strict": false
+                },
+                "icon": "work",
+                "id": "work",
+                "match": "any",
+                "name": "Work",
+                "notify": true,
+                "preset": true,
+                "triggers": [
+                    {
+                        "days": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "forSec": 0,
+                        "from": "09:00",
+                        "not": false,
+                        "to": "18:00",
+                        "type": "schedule"
+                    }
+                ]
+            },
+            {
+                "actions": [
+                    {
+                        "type": "dnd",
+                        "value": true
+                    },
+                    {
+                        "type": "keepAwake",
+                        "value": true
+                    },
+                    {
+                        "type": "nightLight",
+                        "value": false
+                    }
+                ],
+                "auto": false,
+                "color": "red",
+                "end": {
+                    "autoOffMin": 0,
+                    "notify": true,
+                    "revert": true,
+                    "strict": false
+                },
+                "icon": "theaters",
+                "id": "theater",
+                "match": "any",
+                "name": "Theater",
+                "notify": true,
+                "preset": true,
+                "triggers": [
+                    {
+                        "forSec": 0,
+                        "not": false,
+                        "type": "fullscreen"
+                    }
+                ]
+            },
+            {
+                "actions": [
+                    {
+                        "type": "dnd",
+                        "value": true
+                    },
+                    {
+                        "type": "keepAwake",
+                        "value": true
+                    },
+                    {
+                        "type": "nightLight",
+                        "value": false
+                    },
+                    {
+                        "type": "screenShader",
+                        "value": ""
+                    }
+                ],
+                "auto": false,
+                "color": "yellow",
+                "end": {
+                    "autoOffMin": 0,
+                    "notify": true,
+                    "revert": true,
+                    "strict": false
+                },
+                "icon": "co_present",
+                "id": "presentation",
+                "match": "any",
+                "name": "Presentation",
+                "notify": true,
+                "preset": true,
+                "triggers": [
+                    {
+                        "count": 2,
+                        "forSec": 0,
+                        "names": [],
+                        "not": false,
+                        "type": "monitors"
+                    }
+                ]
+            },
+            {
+                "actions": [
+                    {
+                        "type": "dnd",
+                        "value": true
+                    },
+                    {
+                        "type": "media",
+                        "value": "pause"
+                    }
+                ],
+                "auto": false,
+                "color": "orange",
+                "end": {
+                    "autoOffMin": 0,
+                    "notify": true,
+                    "revert": true,
+                    "strict": false
+                },
+                "icon": "center_focus_strong",
+                "id": "focus",
+                "match": "any",
+                "name": "Focus",
+                "notify": true,
+                "preset": true,
+                "triggers": []
+            },
+            {
+                "actions": [
+                    {
+                        "type": "nightLight",
+                        "value": true
+                    },
+                    {
+                        "type": "brightness",
+                        "value": 50
+                    }
+                ],
+                "auto": false,
+                "color": "green",
+                "end": {
+                    "autoOffMin": 0,
+                    "notify": true,
+                    "revert": true,
+                    "strict": false
+                },
+                "icon": "spa",
+                "id": "relax",
+                "match": "any",
+                "name": "Relax",
+                "notify": true,
+                "preset": true,
+                "triggers": [
+                    {
+                        "days": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7
+                        ],
+                        "forSec": 0,
+                        "from": "20:00",
+                        "not": false,
+                        "to": "23:00",
+                        "type": "schedule"
+                    }
+                ]
+            },
+            {
+                "actions": [
+                    {
+                        "type": "dnd",
+                        "value": true
+                    },
+                    {
+                        "type": "nightLight",
+                        "value": true
+                    },
+                    {
+                        "type": "screenShader",
+                        "value": "grayscale"
+                    },
+                    {
+                        "type": "brightness",
+                        "value": 20
+                    },
+                    {
+                        "type": "keepAwake",
+                        "value": false
+                    }
+                ],
+                "auto": false,
+                "color": "teal",
+                "end": {
+                    "autoOffMin": 0,
+                    "notify": true,
+                    "revert": true,
+                    "strict": false
+                },
+                "icon": "bedtime",
+                "id": "sleep",
+                "match": "any",
+                "name": "Sleep",
+                "notify": true,
+                "preset": true,
+                "triggers": [
+                    {
+                        "days": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7
+                        ],
+                        "forSec": 0,
+                        "from": "23:00",
+                        "not": false,
+                        "to": "07:00",
+                        "type": "schedule"
+                    }
+                ]
+            },
+            {
+                "actions": [
+                    {
+                        "type": "powerProfile",
+                        "value": "power-saver"
+                    },
+                    {
+                        "type": "keepAwake",
+                        "value": true
+                    },
+                    {
+                        "type": "dnd",
+                        "value": true
+                    },
+                    {
+                        "type": "volume",
+                        "value": {
+                            "level": 0,
+                            "muted": true
+                        }
+                    },
+                    {
+                        "type": "brightness",
+                        "value": {
+                            "level": 5,
+                            "scope": "all"
+                        }
+                    }
+                ],
+                "auto": true,
+                "color": "pink",
+                "end": {
+                    "autoOffMin": 0,
+                    "notify": true,
+                    "revert": true,
+                    "strict": false
+                },
+                "icon": "tune",
+                "id": "new-mode",
+                "match": "all",
+                "name": "Uni",
+                "notify": true,
+                "preset": false,
+                "triggers": [
+                    {
+                        "days": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "forSec": 0,
+                        "from": "08:00",
+                        "not": false,
+                        "to": "16:45",
+                        "type": "schedule"
+                    },
+                    {
+                        "classes": [
+                            "md.obsidian.Obsidian"
+                        ],
+                        "forSec": 0,
+                        "not": false,
+                        "title": "",
+                        "type": "app",
+                        "when": "running"
+                    },
+                    {
+                        "above": null,
+                        "below": null,
+                        "forSec": 0,
+                        "not": false,
+                        "pluggedIn": false,
+                        "type": "battery"
+                    }
+                ]
+            }
+        ],
+        "overlayEnabled": true,
+        "presetsSeeded": true,
+        "routines": [
+            {
+                "actions": [
+                    {
+                        "type": "media",
+                        "value": "pause"
+                    }
+                ],
+                "color": "blue",
+                "cooldownSec": 5,
+                "enabled": true,
+                "end": {
+                    "notify": false,
+                    "revert": false,
+                    "strict": false
+                },
+                "icon": "pause_circle",
+                "id": "pause-on-lock",
+                "kind": "once",
+                "match": "any",
+                "name": "Pause media on lock",
+                "notify": false,
+                "preset": false,
+                "template": "pause-on-lock",
+                "triggers": [
+                    {
+                        "forSec": 0,
+                        "is": true,
+                        "not": false,
+                        "type": "locked"
+                    }
+                ]
+            }
+        ]
+    },
+    "musicRecognition": {
+        "interval": 4,
+        "timeout": 16
+    },
+    "networking": {
+        "userAgent": ""
+    },
+    "notes": {
+        "autosaveDelay": 400,
+        "defaultPaper": "plain",
+        "enable": true,
+        "paperStrength": 50
+    },
+    "notifications": {
+        "autoDndFullscreen": true,
+        "monitor": {
+            "enable": false,
+            "name": ""
+        },
+        "position": "top_right",
+        "timeout": 5000,
+        "zoomPercent": 100
+    },
+    "oledSaver": {
+        "cursorHideDelay": 1,
+        "hintExtraDelay": 0
+    },
+    "osd": {
+        "enable": false,
+        "height": 500,
+        "hideWhenFullscreen": false,
+        "indicators": {
+            "brightness": false,
+            "gamma": false,
+            "keyboardBrightness": false,
+            "playerVolume": false,
+            "volume": false
+        },
+        "material": {
+            "circledShapes": true,
+            "minimal": true,
+            "rotateShape": false,
+            "shapedValues": true
+        },
+        "position": "right",
+        "showValues": true,
+        "style": "material",
+        "timeout": 2500
+    },
+    "osk": {
+        "autoShow": {
+            "allowMouse": false,
+            "allowPen": true,
+            "allowTouch": true,
+            "enable": false,
+            "hideOnPhysicalKey": true,
+            "hideOnTouchOutside": true,
+            "touchWindowMs": 1200
+        },
+        "heightPercent": 35,
+        "layout": "auto",
+        "pinnedOnStartup": false,
+        "secondaryGlyphs": true,
+        "split": false,
+        "style": "deck"
+    },
+    "overlay": {
+        "buttons": [
+            "volumeMixer",
+            "discordVoice",
+            "recorder",
+            "media",
+            "notes",
+            "resources"
+        ],
+        "clickthroughOpacity": 0.8,
+        "darkenScreen": true,
+        "discordVoice": {
+            "autoResize": true,
+            "avatarSize": 52,
+            "blurEnabled": false,
+            "layoutMode": "grid",
+            "maxAvatars": 8,
+            "participantBackground": "card",
+            "participantBackgroundOpacity": 0.67,
+            "speakingPulseContinuous": true
+        },
+        "floatingImage": {
+            "imageSource": "",
+            "scale": 0.5
+        },
+        "media": {
+            "backgroundOpacityPercentage": 100,
+            "lyricSize": 19,
+            "showSlider": true,
+            "useGradientMask": true
+        },
+        "notes": {
+            "allowEditingIcon": true,
+            "showTabs": true
+        },
+        "openingZoomAnimation": true
+    },
+    "overview": {
+        "animationStyle": "bounce",
+        "autoScaleFactor": 0.9,
+        "centerIcons": true,
+        "columns": 5,
+        "enable": false,
+        "enableCascadeAnimation": true,
+        "enableManualScale": false,
+        "orderBottomUp": false,
+        "orderRightLeft": false,
+        "rows": 2,
+        "scale": 0.1,
+        "scrollingStyle": {
+            "backgroundStyle": "blur",
+            "dimPercentage": 50,
+            "zoomStyle": "out"
+        },
+        "showIcons": true,
+        "showOpeningAnimation": true,
+        "showWindowPreviews": true,
+        "useWorkspaceMap": false
+    },
+    "panelFamily": "ii",
+    "phone": {
+        "contacts": {
+            "enabled": true,
+            "hideUnnamed": true,
+            "showAvatars": true,
+            "sortBy": "first"
+        },
+        "kdeconnectEnabled": true,
+        "microphone": {
+            "autoGainControl": false,
+            "connection": "wifi",
+            "echoCancellation": false,
+            "enabled": false,
+            "micGain": 100,
+            "noiseSuppression": false,
+            "port": 4748,
+            "setAsDefault": false
+        },
+        "scrcpy": {
+            "alwaysOnTop": false,
+            "appMode": {
+                "density": 160,
+                "displayHeight": 960,
+                "displayWidth": 1280,
+                "enabled": true,
+                "favoritePackages": [],
+                "flexDisplay": true,
+                "iconShape": "oneui",
+                "keepActive": true,
+                "showAppIcons": true,
+                "systemDecorations": true
+            },
+            "autoWirelessIp": true,
+            "bitRate": "8M",
+            "fullscreen": false,
+            "maxFps": 0,
+            "maxSize": 0,
+            "noAudio": false,
+            "noPowerOn": false,
+            "showTerminal": false,
+            "showTouches": false,
+            "stayAwake": true,
+            "turnScreenOff": true,
+            "useWireless": true,
+            "videoBuffer": 0,
+            "wirelessPort": ""
+        },
+        "showPeripheralCards": true,
+        "webcam": {
+            "bitrate": "4M",
+            "cameraFacing": "front",
+            "connection": "wifi",
+            "enabled": false,
+            "fps": 30,
+            "mirrorHorizontally": false,
+            "port": 4747,
+            "resolution": "1280x720",
+            "rotateDegrees": 0
+        }
+    },
+    "policies": {
+        "ai": 1,
+        "phone": 1,
+        "player": 0,
+        "translator": 0,
+        "wallpapers": 0,
+        "weeb": 0
+    },
+    "regionSelector": {
+        "annotation": {
+            "badgeStartNumber": 1,
+            "blurStrength": 24,
+            "enableInlineEditor": true,
+            "fillOpacity": 0.25,
+            "highlighterOpacity": 0.4,
+            "useSatty": false
+        },
+        "circle": {
+            "padding": 10,
+            "strokeWidth": 6
+        },
+        "copyNotification": false,
+        "enableOverlay": false,
+        "rect": {
+            "showAimLines": false
+        },
+        "showOnlyOnFocusedMonitor": false,
+        "targetRegions": {
+            "content": false,
+            "contentRegionOpacity": 0.8,
+            "layers": false,
+            "opacity": 0.3,
+            "selectionPadding": 5,
+            "showLabel": false,
+            "windows": true
+        }
+    },
+    "resources": {
+        "diskInterval": 5000,
+        "diskMount": "/",
+        "enableDocker": true,
+        "gpuInterval": 3000,
+        "gpuPreference": "auto",
+        "historyLength": 60,
+        "updateInterval": 3000
+    },
+    "screenRecord": {
+        "codec": "auto",
+        "frameSync": "cfr",
+        "framerate": 60,
+        "keypress": {
+            "hideDelayMs": 2500,
+            "marginH": 32,
+            "marginV": 96,
+            "maxKeys": 5,
+            "mergeTyping": true,
+            "onlyShortcuts": false,
+            "position": "bottom",
+            "scale": 1,
+            "showMouseButtons": false,
+            "showWhileRecording": false
+        },
+        "openInLosslessCut": false,
+        "quality": "balanced",
+        "resolution": "native",
+        "savePath": "$HOME/Videos/Recordings",
+        "service": "wf-recorder",
+        "showEditPrompt": false,
+        "showNotifications": false,
+        "useGpu": true
+    },
+    "screenShader": {
+        "extraShaderDirs": [],
+        "lastUsed": "vibrance"
+    },
+    "screenSnip": {
+        "savePath": ""
+    },
+    "search": {
+        "ai": {
+            "trigger": "suggest"
+        },
+        "alwaysListApps": false,
+        "appearance": {
+            "accentPanels": true,
+            "accentStrength": 0.12,
+            "panelBodyHeight": 420,
+            "panelWidth": 860,
+            "showKeyHintBar": true,
+            "showKeyHints": true
+        },
+        "baseHeight": 500,
+        "baseWidth": 500,
+        "bestMatch": {
+            "enable": false,
+            "secondaryActions": 3,
+            "uniformList": true
+        },
+        "blurFileSearchResultPreviews": false,
+        "browserSites": {
+            "allowRemoteFavicons": false,
+            "enable": true,
+            "includeHistory": true,
+            "maxIndexedSites": 300,
+            "maxResults": 6,
+            "profilePath": "",
+            "refreshMinutes": 10,
+            "useLocalFavicons": true
+        },
+        "centerVerticalRatio": 0.3,
+        "clipboard": {
+            "autoDelete": {
+                "enable": false,
+                "retentionDays": 30,
+                "wipeOnShutdown": false
+            },
+            "detectors": {
+                "email": true,
+                "filePath": true,
+                "hexColor": true,
+                "json": true,
+                "markdown": true,
+                "multiline": true,
+                "number": true,
+                "phone": true,
+                "url": true
+            },
+            "enableSloppySearch": false,
+            "imageHeight": 200,
+            "listColumnRatio": 0.4,
+            "panelWidth": 860,
+            "previewFontSize": 12,
+            "showMetadata": true
+        },
+        "connectStyle": "connect",
+        "enableMathPreview": true,
+        "enableSystemControls": true,
+        "engineBaseUrl": "https://www.google.com/search?q=",
+        "excludedSites": [
+            "quora.com",
+            "facebook.com"
+        ],
+        "fallbacks": {
+            "actions": [
+                "ai",
+                "web",
+                "tasks",
+                "calendar"
+            ],
+            "enable": true
+        },
+        "favorites": {
+            "enable": true
+        },
+        "fileBrowser": {
+            "panelBodyHeight": 620,
+            "panelWidth": 1120
+        },
+        "fileSearch": {
+            "excludedDirectories": [
+                "node_modules",
+                ".git",
+                ".cache",
+                ".venv",
+                "__pycache__",
+                ".cargo",
+                ".rustup",
+                ".npm",
+                ".local/share/Trash"
+            ],
+            "includeHidden": false,
+            "inlineResults": false,
+            "maxDepth": 0,
+            "maxResults": 8,
+            "minimumQueryLength": 3,
+            "threads": 4
+        },
+        "fileSearchDirectory": "/home",
+        "frecency": true,
+        "frecencyData": {
+            "trackActions": true,
+            "trackApps": true,
+            "trackPanels": true
+        },
+        "fuzzyRelativeCutoff": 0.35,
+        "fuzzyThreshold": 0.35,
+        "history": {
+            "enable": true,
+            "maxItems": 50
+        },
+        "imageSearch": {
+            "imageSearchEngineBaseUrl": "https://lens.google.com/uploadbyurl?url=",
+            "useCircleSelection": false
+        },
+        "keybindings": [
+            {
+                "actionId": "actions",
+                "shortcut": "Ctrl+K"
+            },
+            {
+                "actionId": "favorite",
+                "shortcut": "Ctrl+P"
+            },
+            {
+                "actionId": "historyPrevious",
+                "shortcut": "Up"
+            },
+            {
+                "actionId": "historyNext",
+                "shortcut": "Down"
+            },
+            {
+                "actionId": "secondary",
+                "shortcut": "Ctrl+Enter"
+            },
+            {
+                "actionId": "copy",
+                "shortcut": "Ctrl+C"
+            },
+            {
+                "actionId": "save",
+                "shortcut": "Ctrl+S"
+            },
+            {
+                "actionId": "edit",
+                "shortcut": "Ctrl+E"
+            },
+            {
+                "actionId": "ocr",
+                "shortcut": "Ctrl+O"
+            },
+            {
+                "actionId": "create",
+                "shortcut": "Ctrl+N"
+            },
+            {
+                "actionId": "copyDispatch",
+                "shortcut": "Ctrl+Shift+K"
+            },
+            {
+                "actionId": "delete",
+                "shortcut": "Shift+Delete"
+            },
+            {
+                "actionId": "section",
+                "shortcut": "Tab"
+            },
+            {
+                "actionId": "select",
+                "shortcut": "Ctrl+Space"
+            },
+            {
+                "actionId": "cut",
+                "shortcut": "Ctrl+X"
+            },
+            {
+                "actionId": "paste",
+                "shortcut": "Ctrl+V"
+            },
+            {
+                "actionId": "createFolder",
+                "shortcut": "Ctrl+Shift+N"
+            },
+            {
+                "actionId": "duplicate",
+                "shortcut": "Ctrl+D"
+            },
+            {
+                "actionId": "toggleHidden",
+                "shortcut": "Ctrl+H"
+            },
+            {
+                "actionId": "refresh",
+                "shortcut": "Ctrl+R"
+            },
+            {
+                "actionId": "stageCopy",
+                "shortcut": "Ctrl+Shift+C"
+            },
+            {
+                "actionId": "sortFiles",
+                "shortcut": "Ctrl+Shift+S"
+            },
+            {
+                "actionId": "goHome",
+                "shortcut": "Ctrl+Home"
+            },
+            {
+                "actionId": "forward",
+                "shortcut": "Alt+Right"
+            }
+        ],
+        "levenshtein": false,
+        "modules": {
+            "bluetooth": true,
+            "calendar": {
+                "allowCreate": true,
+                "defaultCalendarId": "",
+                "defaultDurationMin": 30,
+                "enable": false,
+                "hiddenCalendars": [],
+                "lookaheadDays": 14,
+                "showDeclined": false,
+                "source": "khal"
+            },
+            "cheatsheet": {
+                "commandsPanel": true,
+                "enable": true,
+                "gmailPanel": true
+            },
+            "clipboard": true,
+            "converter": {
+                "baseCurrency": "BRL",
+                "enable": true
+            },
+            "emojis": {
+                "defaultCategory": "all",
+                "enable": true,
+                "gridColumns": 8,
+                "showRecents": true,
+                "skinTone": "none"
+            },
+            "fileBrowser": true,
+            "fileSearch": true,
+            "generators": {
+                "enable": true
+            },
+            "keybinds": {
+                "enable": true,
+                "includeDefaultBinds": true,
+                "includeUserBinds": true
+            },
+            "materialSymbols": true,
+            "math": true,
+            "mediaDownloader": true,
+            "notes": {
+                "enable": true
+            },
+            "processes": {
+                "enable": true
+            },
+            "quickToggles": {
+                "enable": true,
+                "hidden": []
+            },
+            "quicklinks": {
+                "copyOnEnter": false,
+                "enable": true,
+                "fetchFavicons": true,
+                "links": []
+            },
+            "screenshots": {
+                "blurPreviews": false,
+                "enable": true,
+                "maxItems": 60
+            },
+            "settingsToggles": {
+                "enable": true,
+                "maxInlineResults": 0,
+                "showPages": true
+            },
+            "shellActions": true,
+            "shellCommand": true,
+            "snippets": {
+                "enable": true,
+                "items": []
+            },
+            "sports": {
+                "enable": false,
+                "leagues": [],
+                "lookaheadHours": 72
+            },
+            "systemControls": true,
+            "tasks": {
+                "allowCreate": true,
+                "defaultList": "",
+                "enable": true,
+                "lookaheadDays": 7,
+                "showCompleted": false
+            },
+            "timers": {
+                "enable": true,
+                "quickPresets": [
+                    5,
+                    10,
+                    15,
+                    25,
+                    45,
+                    60
+                ],
+                "showAlarms": true,
+                "showPomodoro": true,
+                "showStopwatch": true
+            },
+            "tools": {
+                "enable": true
+            },
+            "translator": true,
+            "typingTest": {
+                "enable": true
+            },
+            "webSearch": true,
+            "windowManagement": {
+                "columns": 3,
+                "enable": true,
+                "showMonitorMoves": true,
+                "showTilingPresets": true,
+                "showWorkspaceMoves": true
+            },
+            "windowSearch": true
+        },
+        "nonAppResultDelay": 30,
+        "nowPlaying": {
+            "enable": true,
+            "showInlineControls": true,
+            "showPlayerName": true,
+            "tintFromArtwork": false
+        },
+        "positionStyle": "default",
+        "prefix": {
+            "action": "/",
+            "ai": "-",
+            "app": ">",
+            "bluetooth": "&",
+            "clipboard": ";",
+            "emojis": ":",
+            "fileBrowser": "~",
+            "fileSearch": ",",
+            "materialSymbols": "*",
+            "math": "=",
+            "mediaDownloader": "!",
+            "shellCommand": "$",
+            "showDefaultActionsWithoutPrefix": true,
+            "translator": "@",
+            "typingTest": "^",
+            "webSearch": "?",
+            "windowSearch": "#"
+        },
+        "sectionOrder": [
+            {
+                "id": "suggested"
+            },
+            {
+                "id": "aliases"
+            },
+            {
+                "id": "apps"
+            },
+            {
+                "id": "best"
+            },
+            {
+                "id": "sites"
+            },
+            {
+                "id": "controls"
+            },
+            {
+                "id": "tools"
+            },
+            {
+                "id": "actions"
+            },
+            {
+                "id": "quicklinks"
+            },
+            {
+                "id": "textSnippets"
+            },
+            {
+                "id": "other"
+            },
+            {
+                "id": "settings"
+            },
+            {
+                "id": "files"
+            },
+            {
+                "id": "continue"
+            }
+        ],
+        "showNowPlayingBubble": true,
+        "showSettings": false,
+        "sloppy": false,
+        "suggestions": {
+            "enable": false,
+            "maxSuggestionsPerSection": 5,
+            "showAliases": true,
+            "showApps": true,
+            "showCommands": false,
+            "showFrecency": true,
+            "showPanels": true,
+            "showQuicklinks": true,
+            "showToggles": true
+        },
+        "typingTest": {
+            "blindMode": false,
+            "caretStyle": "line",
+            "finishOnLastWord": true,
+            "fontSize": 26,
+            "highlightCurrentWord": false,
+            "history": {
+                "enable": true,
+                "maxEntries": 100
+            },
+            "keyboard": {
+                "enable": true,
+                "fingerAssignments": [],
+                "fingerGuide": false,
+                "highlightNextKey": true,
+                "layout": "qwerty"
+            },
+            "language": "english_1k",
+            "mode": "zen",
+            "numbers": false,
+            "punctuation": false,
+            "quickRestart": false,
+            "showLiveAccuracy": false,
+            "showLiveWpm": false,
+            "smoothCaret": true,
+            "sounds": {
+                "enable": true,
+                "errorSound": true,
+                "errorTheme": "error1",
+                "theme": "click1",
+                "volume": 55
+            },
+            "time": 15,
+            "visibleLines": 3,
+            "words": 50,
+            "zenGuided": true
+        },
+        "typoTolerance": {
+            "enable": true,
+            "keyboardLayouts": true,
+            "maxResults": 8,
+            "threshold": 0.3
+        }
+    },
+    "settingsApp": {
+        "unloadAfterSeconds": 0
+    },
+    "sidebar": {
+        "ai": {
+            "activityDefault": "auto",
+            "autoScroll": true,
+            "barKeys": [
+                "keys",
+                "advanced",
+                "sessions",
+                "newChat"
+            ],
+            "codeLineNumbers": true,
+            "codeWrap": false,
+            "collapseLongAnswers": true,
+            "density": "comfortable",
+            "emptyStateKeys": true,
+            "greeting": "",
+            "pinnedModels": [
+                "google:gemini-3.6-flash"
+            ],
+            "reducedMotion": false,
+            "renderLatex": true,
+            "renderMarkdown": true,
+            "sendKey": "enter",
+            "showAnswerModel": true,
+            "showResponseTime": false,
+            "showTimestamps": false,
+            "soundOnAnswer": false,
+            "textFadeIn": true,
+            "thinkingDefault": ""
+        },
+        "bannerImage": "$HOME/Pictures/Wallpapers/1761752_67b483900e158.jpg",
+        "booru": {
+            "allowNsfw": false,
+            "defaultProvider": "yandere",
+            "limit": 20,
+            "zerochan": {}
+        },
+        "bottomGroup": {
+            "notesTab": true
+        },
+        "cornerOpen": {
+            "bottom": false,
+            "clickless": false,
+            "clicklessCornerEnd": false,
+            "clicklessCornerVerticalOffset": 1,
+            "cornerRegionHeight": 5,
+            "cornerRegionWidth": 100,
+            "enable": false,
+            "valueScroll": false,
+            "visualize": false
+        },
+        "dashboardEntranceAnimations": false,
+        "dashboardHeader": {
+            "avatarShape": "Rectangle",
+            "customText": "",
+            "profileImageType": "user_profile",
+            "textMode": "username"
+        },
+        "dashboardSubHeader": {
+            "customText": "",
+            "greetingSubtextMode": "uptime"
+        },
+        "enableBanner": true,
+        "keepLeftSidebarLoaded": true,
+        "keepRightSidebarLoaded": true,
+        "position": "default",
+        "quickSliders": {
+            "enable": true,
+            "showBrightness": true,
+            "showGamma": false,
+            "showMic": false,
+            "showVolume": true,
+            "vertical": false
+        },
+        "quickToggles": {
+            "android": {
+                "columns": 5,
+                "layoutVersion": 2,
+                "pages": [
+                    [
+                        {
+                            "id": "network",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "network"
+                        },
+                        {
+                            "id": "bluetooth",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "bluetooth"
+                        },
+                        {
+                            "id": "gameMode",
+                            "sizeH": 1,
+                            "sizeW": 1,
+                            "type": "gameMode"
+                        },
+                        {
+                            "id": "audio",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "audio"
+                        },
+                        {
+                            "id": "mic",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "mic"
+                        },
+                        {
+                            "id": "dnsOverTls",
+                            "sizeH": 1,
+                            "sizeW": 1,
+                            "type": "dnsOverTls"
+                        },
+                        {
+                            "id": "screenRecord",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "screenRecord"
+                        },
+                        {
+                            "id": "darkMode",
+                            "sizeH": 1,
+                            "sizeW": 1,
+                            "type": "darkMode"
+                        },
+                        {
+                            "id": "idleInhibitor",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "idleInhibitor"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "easyEffects",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "easyEffects"
+                        },
+                        {
+                            "id": "keypressDisplay",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "keypressDisplay"
+                        },
+                        {
+                            "id": "soundcoreAnc",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "soundcoreAnc"
+                        },
+                        {
+                            "id": "powerProfile",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "powerProfile"
+                        },
+                        {
+                            "id": "screenShader",
+                            "sizeH": 1,
+                            "sizeW": 1,
+                            "type": "screenShader"
+                        },
+                        {
+                            "id": "systemSounds",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "systemSounds"
+                        },
+                        {
+                            "id": "autoDnd",
+                            "sizeH": 1,
+                            "sizeW": 1,
+                            "type": "autoDnd"
+                        }
+                    ]
+                ]
+            },
+            "androidTablet": {
+                "columns": 4,
+                "layoutVersion": 2,
+                "pages": []
+            },
+            "classic": {
+                "toggles": [
+                    "network",
+                    "bluetooth",
+                    "vpn",
+                    "tailscale",
+                    "idleInhibitor",
+                    "nightLight",
+                    "modes",
+                    "easyEffects",
+                    "gameMode"
+                ]
+            },
+            "style": "android",
+            "useThreeWaySliders": true
+        },
+        "sidebarStyle": "default",
+        "tabletShade": {
+            "edgeDragHeight": 8,
+            "liveBackdrop": false
+        },
+        "translator": {
+            "delay": 300,
+            "enable": false
+        },
+        "useCustomBanner": true,
+        "volumeDialogMediaWidget": true
+    },
+    "soundcore": {
+        "model": "SoundcoreA3028"
+    },
+    "sounds": {
+        "alarm": false,
+        "alarmFadeIn": false,
+        "alarmFadeInSeconds": 30,
+        "alwaysPlayApps": [],
+        "battery": false,
+        "custom": {
+            "alarm": "",
+            "battery": "",
+            "devices": "",
+            "lock": "",
+            "notifications": "",
+            "pomodoro": "",
+            "screenshot": "",
+            "session": "",
+            "volumeChange": ""
+        },
+        "devices": false,
+        "enable": false,
+        "lock": false,
+        "monoAudio": false,
+        "neverPlayApps": [],
+        "notificationDefaultPolicy": "play",
+        "notifications": true,
+        "pomodoro": false,
+        "screenshot": false,
+        "session": false,
+        "theme": "oxygen",
+        "volume": 100,
+        "volumeChange": false
+    },
+    "tablet": {
+        "appDrawer": {
+            "edgeDragHeight": 8,
+            "iconSize": 0,
+            "longPressMenu": true,
+            "showCategoryFilter": true,
+            "showClipboardResults": true,
+            "showFileResults": true,
+            "showSortButton": true,
+            "showSuggestions": true,
+            "showToolShelf": true,
+            "sideResultLimit": 6,
+            "sortMode": "name",
+            "tileWidth": 0
+        },
+        "bubble": {
+            "actions": [
+                "liveDraw",
+                "osk",
+                "toggleFloating",
+                "toggleFullscreen",
+                "regionScreenshot",
+                "sidebarRight",
+                "recents",
+                "appDrawer"
+            ],
+            "enable": true,
+            "idleAfterSeconds": 4,
+            "idleOpacity": 65,
+            "showOverFullscreen": true,
+            "size": 56,
+            "snapToEdge": true
+        },
+        "dock": {
+            "appTapAction": "focus",
+            "autoHideOnOccupiedWorkspace": false,
+            "backgroundFloating": false,
+            "backgroundOpacity": 75,
+            "backgroundStyle": "none",
+            "compactWhenPageCounterHidden": true,
+            "doubleTapLaunchMs": 320,
+            "height": 96,
+            "hidePageCounterOnOccupiedWorkspace": true,
+            "iconSize": 48,
+            "keepNavigationVisible": true,
+            "maximumRecents": 0,
+            "navigationOrder": [
+                "back",
+                "home",
+                "recents"
+            ],
+            "reserveSpace": true,
+            "searchBarStyle": "extended",
+            "searchBarWidth": 320,
+            "searchLeadingAction": "search",
+            "searchPlaceholder": "",
+            "searchTrailingAction": "apps",
+            "showAppDividers": true,
+            "showAppDrawerButton": true,
+            "showAppRow": true,
+            "showNavigation": true,
+            "showPageCounter": true,
+            "showRunningApps": true,
+            "showSearchBar": true,
+            "showWorkspaceArrows": true
+        },
+        "gestures": {
+            "bottomEdge": "android",
+            "sideEdges": "back"
+        },
+        "homeWorkspace": 0,
+        "hubMode": {
+            "enable": false,
+            "idleSeconds": 120,
+            "pauseWhilePlaying": true,
+            "requireCharging": true
+        },
+        "liveDraw": {
+            "enable": true,
+            "palette": [
+                "#ffffff",
+                "#111111",
+                "#e53935",
+                "#fb8c00",
+                "#fdd835",
+                "#43a047",
+                "#1e88e5",
+                "#8e24aa"
+            ],
+            "pressure": true,
+            "smoothing": 55,
+            "width": 4,
+            "workspaceParallax": true
+        },
+        "navigation": {
+            "backKey": "alt_left",
+            "customBackKey": "",
+            "customBackMods": "",
+            "sendBackKeyToApps": true
+        },
+        "pen": {
+            "buttons": [
+                "dragWindow",
+                "back"
+            ],
+            "cursor": true,
+            "cursorSize": 20,
+            "cursorTheme": "",
+            "enable": false
+        },
+        "recents": {
+            "backdropOpacity": 82,
+            "gridColumns": 2,
+            "gridRows": 2,
+            "layout": "list",
+            "showCardActions": true
+        },
+        "windows": {
+            "cascade": true,
+            "exclusions": [
+                "quickshell"
+            ],
+            "floatHeightPercent": 68,
+            "floatMode": "off",
+            "floatWidthPercent": 62,
+            "touchControls": true,
+            "touchControlsHeight": 40
+        }
+    },
+    "tailscale": {
+        "acceptDns": true,
+        "advertiseExitNode": false,
+        "autoConnect": false,
+        "enableDiagnostics": true,
+        "enabled": false,
+        "shieldsUp": false,
+        "showPeers": true,
+        "ssh": false,
+        "stopDaemonWhenDisabled": false
+    },
+    "tiling": {
+        "coResize": {
+            "adoptWorkspace": false,
+            "edgeTolerancePx": 8,
+            "enable": true,
+            "releaseWorkspace": false
+        },
+        "defaultPreset": "kde",
+        "detection": {
+            "activeHz": 90,
+            "idleHz": 5,
+            "trackingTolerancePx": 2,
+            "useKeybinds": true
+        },
+        "dragQuickTile": false,
+        "enable": true,
+        "gaps": {
+            "followHyprland": true,
+            "inner": 4,
+            "outer": 8
+        },
+        "keyboardQuickTile": true,
+        "mode": "quickTile",
+        "monitors": [
+            {
+                "name": "eDP-1",
+                "preset": "quarters"
+            }
+        ],
+        "overlay": {
+            "cornerRadius": 12,
+            "fadeDuration": 150,
+            "hoveredOpacity": 0.55,
+            "layoutHintDuration": 1400,
+            "quickTileDuration": 500,
+            "showLabels": true,
+            "stackIndicator": true,
+            "zoneOpacity": 0.28
+        },
+        "restoreOnUntile": true,
+        "showOnDragStart": true
+    },
+    "time": {
+        "alarms": {
+            "showAlarmsSection": true,
+            "showAnalogClock": true,
+            "showWorldClocks": true,
+            "useFullscreenPopup": false
+        },
+        "dateFormat": "dd/MM, ddd",
+        "dateWithYearFormat": "dd/MM/yyyy",
+        "firstDayOfWeek": 0,
+        "format": "hh:mm",
+        "longDateFormat": "dd/MM/yyyy",
+        "pomodoro": {
+            "breakTime": 300,
+            "cyclesBeforeLongBreak": 4,
+            "focus": 1500,
+            "longBreak": 900
+        },
+        "secondPrecision": false,
+        "secondsFormat": "ss",
+        "shortDateFormat": "dd/MM",
+        "worldClocks": []
+    },
+    "todo": {
+        "googleTasks": {},
+        "provider": "local",
+        "refreshIntervalMinutes": 5
+    },
+    "tray": {
+        "filterPassive": false,
+        "invertPinnedItems": true,
+        "monochromeIcons": true,
+        "pinnedItems": [
+            "Fcitx"
+        ],
+        "showItemId": false
+    },
+    "update": {
+        "autoCheckInterval": "hourly",
+        "replaceHyprConfig": true,
+        "scriptFlags": "--no-backup --no-confirm"
+    },
+    "updates": {
+        "adviseUpdateThreshold": 75,
+        "checkInterval": 120,
+        "enableCheck": false,
+        "stronglyAdviseUpdateThreshold": 200
+    },
+    "userProfile": {
+        "avatarColor": "primary",
+        "avatarShape": "Circle",
+        "imageStyle": "initial"
+    },
+    "vpn": {
+        "autoConnect": false,
+        "backend": "networkmanager",
+        "blockLan": false,
+        "defaultProvider": "networkmanager",
+        "disconnectOnDisable": false,
+        "enableDiagnostics": true,
+        "enabled": false,
+        "killSwitch": false
+    },
+    "waffles": {
+        "actionCenter": {
+            "toggles": [
+                "network",
+                "bluetooth",
+                "easyEffects",
+                "powerProfile",
+                "idleInhibitor",
+                "nightLight",
+                "darkMode",
+                "antiFlashbang",
+                "cloudflareWarp",
+                "mic",
+                "musicRecognition",
+                "notifications",
+                "onScreenKeyboard",
+                "gameMode",
+                "screenSnip",
+                "colorPicker"
+            ]
+        },
+        "bar": {
+            "bottom": true,
+            "leftAlignApps": false
+        },
+        "calendar": {
+            "force2CharDayOfWeek": true
+        },
+        "tweaks": {
+            "smootherMenuAnimations": true,
+            "smootherSearchBar": true,
+            "switchHandlePositionFix": true
+        }
+    },
+    "wallpaperSelector": {
+        "customDefaultPath": "$HOME/Pictures/Wallpapers",
+        "directories": [
+            {
+                "path": "$HOME/Pictures/Wallpapers"
+            }
+        ],
+        "sortField": "name",
+        "sortReversed": false,
+        "useCustomDefaultPath": false,
+        "useSystemFileDialog": false
+    },
+    "wallpapers": {
+        "paths": {
+            "download": "$HOME/Pictures/Wallpapers",
+            "nsfw": "$HOME/Pictures/Wallpapers/NSFW"
+        },
+        "service": "wallhaven",
+        "showAnimeResults": false,
+        "sort": "favourites"
+    },
+    "windows": {
+        "centerTitle": true,
+        "showTitlebar": true
+    },
+    "workSafety": {
+        "enable": {
+            "clipboard": false,
+            "wallpaper": false
+        },
+        "triggerCondition": {
+            "fileKeywords": [
+                "anime",
+                "booru",
+                "ecchi",
+                "hentai",
+                "yande.re",
+                "konachan",
+                "breast",
+                "nipples",
+                "pussy",
+                "nsfw",
+                "spoiler",
+                "girl"
+            ],
+            "linkKeywords": [
+                "hentai",
+                "porn",
+                "sukebei",
+                "hitomi.la",
+                "rule34",
+                "gelbooru",
+                "fanbox",
+                "dlsite"
+            ],
+            "networkNameKeywords": [
+                "airport",
+                "cafe",
+                "college",
+                "company",
+                "eduroam",
+                "free",
+                "guest",
+                "public",
+                "school",
+                "university"
+            ]
+        }
+    }
+}

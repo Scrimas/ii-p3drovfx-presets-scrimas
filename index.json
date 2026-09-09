@@ -1,0 +1,19 @@
+{
+    "schema": 1,
+    "author": "Scrimas",
+    "presets": [
+        {
+            "id": "bioluminescence",
+            "name": "Bioluminescence",
+            "description": "Bioluminescence",
+            "version": "1.0.0",
+            "configVersion": 19,
+            "path": "presets/bioluminescence",
+            "wallpaper": "presets/bioluminescence/wallpaper.jpg",
+            "banner": "presets/bioluminescence/banner.jpg",
+            "screenshots": [
+                "presets/bioluminescence/screenshots/1.png"
+            ]
+        }
+    ]
+}
