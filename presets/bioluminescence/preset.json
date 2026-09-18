@@ -3,13 +3,18 @@
     "name": "Bioluminescence",
     "author": "Scrimas",
     "description": "Bioluminescence",
-    "version": "1.0.1",
-    "configVersion": 19,
+    "version": "1.0.2",
+    "configVersion": 22,
     "config": "config.json",
     "screenshots": [
         "screenshots/1.png"
     ],
     "changelog": [
+        {
+            "version": "1.0.2",
+            "date": "2026-09-18",
+            "notes": "minor"
+        },
         {
             "version": "1.0.1",
             "date": "2026-09-09",
@@ -21,6 +26,5 @@
             "notes": "First release."
         }
     ],
-    "wallpaper": "wallpaper.jpg",
-    "banner": "banner.jpg"
+    "wallpaper": "wallpaper.jpg"
 }
