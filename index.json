@@ -6,7 +6,7 @@
             "id": "bioluminescence",
             "name": "Bioluminescence",
             "description": "Bioluminescence",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "configVersion": 22,
             "path": "presets/bioluminescence",
             "wallpaper": "presets/bioluminescence/wallpaper.jpg",
