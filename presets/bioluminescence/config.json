@@ -1657,7 +1657,7 @@
     "dock": {
         "dimInactiveIcons": false,
         "dockRadius": 10,
-        "dockStyle": "floating",
+        "dockStyle": "islands",
         "enable": true,
         "enableAppGroups": false,
         "enableAppTooltip": false,
@@ -1669,7 +1669,7 @@
         "hoverToReveal": false,
         "iconSpacing": 1,
         "islandSpacing": 8,
-        "islandsStyle": false,
+        "islandsStyle": true,
         "isolateMonitors": false,
         "launchAnimation": "pulse",
         "magnificationCurve": "cosine",
@@ -1801,7 +1801,7 @@
         },
         "keyboardBacklight": {
             "autoOff": true,
-            "timeout": 15
+            "timeout": 30
         },
         "night": {
             "automatic": false,
@@ -2683,7 +2683,7 @@
             "textFadeIn": true,
             "thinkingDefault": ""
         },
-        "bannerImage": "$HOME/.config/illogical-impulse/presets/DS3_banner.jpg",
+        "bannerImage": "$HOME/Pictures/Wallpapers/258123.jpg",
         "booru": {
             "allowNsfw": false,
             "defaultProvider": "yandere",
