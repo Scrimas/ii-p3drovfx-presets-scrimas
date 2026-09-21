@@ -160,6 +160,8 @@
         "blurWhenWindowsOpen": true,
         "blurWhenWindowsOpenRadius": 100,
         "cheatsheetZoomOut": false,
+        "desktopIconScale": 1,
+        "desktopIconsLocked": false,
         "enable": true,
         "gradientBlur": {
             "direction": "right-to-left",
@@ -224,6 +226,7 @@
             "width": 1920
         },
         "scaleLargeWallpapers": false,
+        "useBackgroundOverviewAlways": false,
         "useSeparateLightModeWallpaper": false,
         "useSeparateLockscreenWallpaper": false,
         "useWallpaperEngine": false,
@@ -1080,7 +1083,7 @@
             }
         },
         "barBackgroundStyle": 3,
-        "barGroupStyle": 1,
+        "barGroupStyle": 0,
         "battery": {
             "colorByPowerProfile": true,
             "colorMode": "primary",
@@ -1161,51 +1164,38 @@
         "floatStyleShadow": true,
         "floatingNotch": {
             "autoHide": false,
-            "centerInBar": false,
-            "checklistAlwaysVisible": false,
-            "checklistOnlyExpanded": false,
+            "auxiliaryBubble": true,
+            "centerInBar": true,
             "clickToExpand": false,
             "disableAiStatus": false,
-            "disableAudio": false,
             "disableBattery": false,
             "disableBluetooth": false,
-            "disableCalendar": false,
-            "disableChecklist": false,
             "disableClipboard": false,
             "disableDictation": false,
+            "disableEarbuds": false,
             "disableKdeConnectInLocalSend": false,
-            "disableKeyboard": false,
+            "disableKeyboard": true,
             "disableLocalSend": false,
             "disableMedia": false,
+            "disableMode": false,
             "disableNotification": false,
             "disableOsd": false,
             "disableProgress": false,
             "disableRecording": false,
             "disableTimer": false,
+            "disableUpdate": false,
+            "disableWeather": true,
             "disableWifi": false,
-            "disableWorkspaces": false,
+            "disableWorkspaces": true,
             "dropShadow": true,
             "enable": false,
-            "extraCompact": false,
-            "heightAiStatus": 36,
-            "heightAudio": 36,
-            "heightBattery": 36,
-            "heightBluetooth": 60,
-            "heightCalendar": 48,
-            "heightChecklist": 36,
-            "heightClipboard": 36,
-            "heightDictation": 44,
-            "heightHome": 36,
-            "heightKeyboard": 36,
-            "heightLocalSend": 42,
-            "heightMedia": 52,
-            "heightNotification": 60,
-            "heightProgress": 48,
-            "heightRecording": 36,
-            "heightTimer": 36,
-            "heightWifi": 36,
-            "heightWorkspaces": 36,
+            "hoverExpandDelayMs": 600,
+            "integratedOverview": true,
+            "integratedPopups": true,
+            "integratedSessionMenu": true,
+            "integratedWallpaperBrowser": true,
             "onlyShowOnSingleMonitor": false,
+            "shape": "island",
             "singleMonitorName": ""
         },
         "indicators": {
@@ -1230,28 +1220,7 @@
             "uppercaseLayout": false
         },
         "layouts": {
-            "center": [
-                {
-                    "centered": false,
-                    "id": "clock",
-                    "visible": true
-                },
-                {
-                    "centered": false,
-                    "id": "shell_update_indicator",
-                    "visible": false
-                },
-                {
-                    "centered": false,
-                    "id": "workspaces",
-                    "visible": true
-                },
-                {
-                    "centered": false,
-                    "id": "utility_buttons",
-                    "visible": true
-                }
-            ],
+            "center": [],
             "left": [
                 {
                     "centered": false,
@@ -1619,7 +1588,7 @@
             "upcomingHorizonDays": 14
         }
     },
-    "configVersion": 22,
+    "configVersion": 25,
     "conflictKiller": {
         "autoKillNotificationDaemons": false,
         "autoKillTrays": true
@@ -1700,6 +1669,232 @@
         "isolateMonitors": false,
         "macOsMagnificationScale": 1.6
     },
+    "dynamicIsland": {
+        "appearance": {
+            "dropShadow": true,
+            "height": 42,
+            "surface": "layer"
+        },
+        "behavior": {
+            "autoHide": false,
+            "collapseGraceMs": 450,
+            "dashboardDwellMs": 320,
+            "hideOnFullscreen": true,
+            "holdToReveal": true,
+            "holdToRevealMs": 300,
+            "quietWindowMs": 1200,
+            "sideExpandDwellMs": 160
+        },
+        "dashboard": {
+            "pages": [
+                "controls",
+                "notifications",
+                "widgets",
+                "wallpapers",
+                "workspaces"
+            ],
+            "photoWidgetImages": {},
+            "photoWidgetPath": "",
+            "quickToggles": {
+                "columns": 6,
+                "layoutVersion": 2,
+                "pages": [
+                    [
+                        {
+                            "id": "dashboardToolbar",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "dashboardToolbar"
+                        },
+                        {
+                            "id": "network",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "network"
+                        },
+                        {
+                            "id": "bluetooth",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "bluetooth"
+                        },
+                        {
+                            "id": "kdeConnect",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "kdeConnect"
+                        },
+                        {
+                            "id": "audio",
+                            "sizeH": 1,
+                            "sizeW": 2,
+                            "type": "audio"
+                        },
+                        {
+                            "id": "systemResourcesWidget",
+                            "sizeH": 2,
+                            "sizeW": 2,
+                            "type": "systemResourcesWidget"
+                        },
+                        {
+                            "id": "mediaWidget",
+                            "sizeH": 4,
+                            "sizeW": 2,
+                            "type": "mediaWidget"
+                        },
+                        {
+                            "id": "idleInhibitor",
+                            "sizeH": 1,
+                            "sizeW": 1,
+                            "type": "idleInhibitor"
+                        },
+                        {
+                            "id": "notificationListWidget",
+                            "sizeH": 3,
+                            "sizeW": 4,
+                            "type": "notificationListWidget"
+                        },
+                        {
+                            "id": "powerProfile",
+                            "sizeH": 1,
+                            "sizeW": 1,
+                            "type": "powerProfile"
+                        }
+                    ]
+                ],
+                "rows": 10
+            },
+            "showActivityHero": true
+        },
+        "enable": false,
+        "monitor": {
+            "followFocus": true,
+            "name": "eDP-1"
+        },
+        "notch": {
+            "centerInBar": false,
+            "clickToExpand": false,
+            "singleWidgetExpanded": false
+        },
+        "pills": {
+            "gap": 8,
+            "gooeyMorph": true,
+            "height": 38,
+            "maxIslands": 3
+        },
+        "style": "notch",
+        "widgets": {
+            "ai": {
+                "enable": true,
+                "notchHeight": 36,
+                "processFallback": false,
+                "side": "right"
+            },
+            "battery": {
+                "enable": true,
+                "notchHeight": 36,
+                "ttlMs": 5000
+            },
+            "bluetooth": {
+                "enable": true,
+                "notchHeight": 88,
+                "ttlMs": 3000
+            },
+            "clipboard": {
+                "enable": true,
+                "notchHeight": 36,
+                "ttlMs": 2500
+            },
+            "clock": {
+                "enable": true,
+                "notchHeight": 36,
+                "showDate": true
+            },
+            "colorPicker": {
+                "enable": true
+            },
+            "dictation": {
+                "enable": true,
+                "notchHeight": 44,
+                "side": "left"
+            },
+            "earbuds": {
+                "enable": false,
+                "notchHeight": 36,
+                "side": "right"
+            },
+            "keyboard": {
+                "enable": true,
+                "notchHeight": 36,
+                "side": "left"
+            },
+            "localSend": {
+                "enable": true,
+                "kdeConnectColumn": true,
+                "notchHeight": 42
+            },
+            "media": {
+                "enable": true,
+                "notchHeight": 52,
+                "side": "right"
+            },
+            "mode": {
+                "enable": true,
+                "notchHeight": 36,
+                "ttlMs": 3000
+            },
+            "notification": {
+                "enable": true,
+                "notchHeight": 60,
+                "ttlMs": 4500
+            },
+            "osd": {
+                "enable": true,
+                "notchHeight": 72
+            },
+            "progress": {
+                "enable": true,
+                "notchHeight": 48,
+                "side": "left"
+            },
+            "recording": {
+                "enable": true,
+                "notchHeight": 36,
+                "side": "left"
+            },
+            "session": {
+                "enable": true
+            },
+            "timer": {
+                "enable": true,
+                "notchHeight": 36,
+                "side": "left"
+            },
+            "update": {
+                "enable": true
+            },
+            "wallpaper": {
+                "enable": true
+            },
+            "weather": {
+                "enable": false,
+                "notchHeight": 36,
+                "side": "right"
+            },
+            "wifi": {
+                "enable": true,
+                "notchHeight": 36,
+                "ttlMs": 3000
+            },
+            "workspaces": {
+                "enable": true,
+                "ignoreSpecial": true,
+                "notchHeight": 36,
+                "side": "left",
+                "ttlMs": 2000
+            }
+        }
+    },
     "hacks": {
         "arbitraryRaceConditionDelay": 20
     },
@@ -1722,6 +1917,7 @@
         "deadPixelWorkaround": {
             "enable": false
         },
+        "desktopDoubleClick": true,
         "scrolling": {
             "fasterTouchpadScroll": true,
             "mouseScrollDeltaThreshold": 120,
@@ -2382,7 +2578,7 @@
         "paperStrength": 50
     },
     "notifications": {
-        "autoDndFullscreen": true,
+        "autoDndFullscreen": false,
         "monitor": {
             "enable": false,
             "name": ""
@@ -2517,6 +2713,7 @@
         "scrcpy": {
             "alwaysOnTop": false,
             "appMode": {
+                "autoUnlock": true,
                 "density": 160,
                 "displayHeight": 960,
                 "displayWidth": 1280,
@@ -2525,9 +2722,11 @@
                 "flexDisplay": true,
                 "iconShape": "oneui",
                 "keepActive": true,
+                "onSessionEnd": "lock",
                 "showAppIcons": true,
                 "systemDecorations": true
             },
+            "autoResume": true,
             "autoWirelessIp": true,
             "bitRate": "8M",
             "fullscreen": false,
@@ -2535,6 +2734,7 @@
             "maxSize": 0,
             "noAudio": false,
             "noPowerOn": false,
+            "pinAdbPort": true,
             "showTerminal": true,
             "showTouches": false,
             "stayAwake": true,

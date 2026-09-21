@@ -4,7 +4,7 @@ Community presets collection for [Illogical Impulse](https://github.com/vaxerski
 
 ## Available Presets
 
-- **Bioluminescence** (`bioluminescence`, v1.0.4) — Bioluminescence
+- **Bioluminescence** (`bioluminescence`, v1.0.5) — Bioluminescence
 
 ## How to Install
 
