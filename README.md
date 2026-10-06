@@ -5,6 +5,7 @@ Community presets collection for [Illogical Impulse](https://github.com/vaxerski
 ## Available Presets
 
 - **Bioluminescence** (`bioluminescence`, v1.0.6) — Bioluminescence
+- **Gore Magala** (`gore-magala`, v1.0.0) — Gore Magala (best monster btw)
 
 ## How to Install
 

@@ -14,6 +14,19 @@
             "screenshots": [
                 "presets/bioluminescence/screenshots/1-646e5cfc.png"
             ]
+        },
+        {
+            "id": "gore-magala",
+            "name": "Gore Magala",
+            "description": "Gore Magala (best monster btw)",
+            "version": "1.0.0",
+            "configVersion": 29,
+            "path": "presets/gore-magala",
+            "wallpaper": "presets/gore-magala/wallpaper.png",
+            "banner": "presets/gore-magala/banner.jpg",
+            "screenshots": [
+                "presets/gore-magala/screenshots/1-05d2fc32.png"
+            ]
         }
     ]
 }

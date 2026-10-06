@@ -1,0 +1,21 @@
+{
+    "schema": 1,
+    "name": "Gore Magala",
+    "author": "Scrimas",
+    "description": "Gore Magala (best monster btw)",
+    "version": "1.0.0",
+    "configVersion": 29,
+    "config": "config.json",
+    "screenshots": [
+        "screenshots/1-05d2fc32.png"
+    ],
+    "changelog": [
+        {
+            "version": "1.0.0",
+            "date": "2026-10-06",
+            "notes": "First release."
+        }
+    ],
+    "wallpaper": "wallpaper.png",
+    "banner": "banner.jpg"
+}
