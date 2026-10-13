@@ -130,7 +130,16 @@
         }
     },
     "background": {
-        "activeWidgets": [],
+        "activeWidgets": [
+            {
+                "id": "widget_calendar_next_event_rice",
+                "lockBehavior": "hide",
+                "placementStrategy": "free",
+                "widgetId": "calendar_next_event",
+                "x": 1404,
+                "y": 69
+            }
+        ],
         "animateWallpaperChanges": true,
         "blurGradientExperiment": false,
         "blurWhenWindowsOpen": true,
@@ -140,17 +149,72 @@
         "desktopIcons": {
             "autoArrange": false,
             "avoidPanels": true,
-            "flow": "columns",
+            "flow": "rows",
+            "groupColumns": 3,
+            "groups": [
+                {
+                    "height": 343,
+                    "items": [
+                        "ii-p3drovfx",
+                        "MHGU_Editor",
+                        "GLIA",
+                        "autobright",
+                        "claude-mods"
+                    ],
+                    "title": "projects",
+                    "width": 390,
+                    "x": 0,
+                    "y": 120
+                },
+                {
+                    "height": 193,
+                    "items": [
+                        "M1 MCB",
+                        "Scrims"
+                    ],
+                    "title": "Study",
+                    "width": 264,
+                    "x": 10,
+                    "y": 470
+                },
+                {
+                    "height": 193,
+                    "items": [
+                        "Downloads",
+                        "Recordings",
+                        "Screenshots"
+                    ],
+                    "title": "Captures",
+                    "width": 390,
+                    "x": 0,
+                    "y": 680
+                },
+                {
+                    "height": 343,
+                    "items": [
+                        "Book 1 - Air",
+                        "Book 2 - Spirits",
+                        "Book 3 - Change",
+                        "Book 4 - Balance"
+                    ],
+                    "title": ";;Korra",
+                    "width": 380,
+                    "x": 1536,
+                    "y": 857
+                }
+            ],
             "hidden": false,
             "iconBackground": "none",
-            "keepSorted": true,
+            "iconShadow": true,
+            "keepSorted": false,
             "labelLines": 2,
             "labelStyle": "auto",
             "labels": "always",
             "margin": 12,
             "notificationBadges": true,
-            "origin": "topLeft",
+            "origin": "bottomLeft",
             "runningBadges": true,
+            "shelf": true,
             "sortBy": "type",
             "sortDescending": false,
             "spacing": "compact",
@@ -983,7 +1047,7 @@
             "photo_1x1": {
                 "backgroundShape": "Cookie9Sided",
                 "enable": false,
-                "imagePath": "$HOME/Pictures/Wallpapers/1761760_67b483dfad643.jpg",
+                "imagePath": "$HOME/.config/illogical-impulse/presets/Gore Magala_photo0.jpg",
                 "placementStrategy": "free",
                 "widgetSize": 100,
                 "x": 400,
@@ -993,7 +1057,7 @@
             "photo_minimal_temp_2x1": {
                 "enable": false,
                 "expressiveColors": false,
-                "imagePath": "$HOME/Downloads/ChatGPT Image Aug 28, 2026, 07_04_20 PM.png",
+                "imagePath": "$HOME/.config/illogical-impulse/presets/Gore Magala_photo1.png",
                 "placementStrategy": "free",
                 "showOverlay": true,
                 "x": 200,
@@ -1003,7 +1067,7 @@
             "photo_pill_2x1": {
                 "enable": false,
                 "expressiveColors": false,
-                "imagePath": "$HOME/Downloads/ChatGPT Image Aug 28, 2026, 07_04_20 PM.png",
+                "imagePath": "$HOME/.config/illogical-impulse/presets/Gore Magala_photo1.png",
                 "placementStrategy": "free",
                 "showOverlay": true,
                 "x": 200,
@@ -1037,7 +1101,7 @@
             "photo_weather_2x1": {
                 "enable": false,
                 "expressiveColors": false,
-                "imagePath": "$HOME/Downloads/ChatGPT Image Aug 28, 2026, 07_04_20 PM.png",
+                "imagePath": "$HOME/.config/illogical-impulse/presets/Gore Magala_photo1.png",
                 "placementStrategy": "free",
                 "showOverlay": true,
                 "x": 200,
@@ -1215,8 +1279,8 @@
                 "x": 400,
                 "y": 120
             },
-            "tintOpacity": 0.55,
-            "tintOpacityEnabled": false,
+            "tintOpacity": 0.15,
+            "tintOpacityEnabled": true,
             "todo_board": {
                 "enable": false,
                 "placementStrategy": "free",
@@ -1458,7 +1522,9 @@
             "swapPrimaryWithSecondary": false
         },
         "bluetooth": {
-            "colorMode": "primary"
+            "colorMode": "primary",
+            "sculptShowName": true,
+            "sculptVariant": "ring"
         },
         "bluetoothDevicesLayout": "classic",
         "borderless": false,
@@ -1481,6 +1547,7 @@
         "dashboardButton": {
             "colorMode": "primary",
             "orbVariant": "filled",
+            "sculptVariant": "tile",
             "showAlarms": true,
             "showBluetooth": true,
             "showCaffeine": true,
@@ -1547,6 +1614,7 @@
             "disableEarbuds": false,
             "disableEasyEffects": false,
             "disableFingerprint": false,
+            "disableHealth": false,
             "disableKdeConnectInLocalSend": false,
             "disableKeyboard": true,
             "disableLocalSend": false,
@@ -1600,6 +1668,8 @@
         },
         "keyboardLayout": {
             "colorMode": "primary",
+            "sculptShowName": true,
+            "sculptVariant": "selector",
             "secondaryOpposite": false,
             "showPrimary": true,
             "showSecondary": true,
@@ -1656,6 +1726,15 @@
             "popupStyle": "default",
             "useFixedSize": true
         },
+        "networkSpeed": {
+            "colorMode": "primary",
+            "compact": false,
+            "expressiveVariant": "capsule",
+            "hideWhenOffline": false,
+            "mode": "both",
+            "showUnit": true,
+            "unit": "bytes"
+        },
         "onlyShowOnSingleMonitor": false,
         "policies": {
             "colorMode": "primary"
@@ -1700,9 +1779,11 @@
             "alwaysShowDisk": false,
             "alwaysShowRam": true,
             "alwaysShowSwap": true,
+            "colorMode": "primary",
             "cpuWarningThreshold": 90,
             "expressivePopup": true,
             "memoryWarningThreshold": 95,
+            "sculptVariant": "pressure",
             "showDocker": false,
             "showPercentageText": true,
             "swapWarningThreshold": 85
@@ -1710,6 +1791,7 @@
         "screenList": [],
         "searchWidget": {
             "colorMode": "tonal",
+            "sculptVariant": "field",
             "showShortcutHint": true,
             "sizeMode": "compact"
         },
@@ -1776,7 +1858,7 @@
         },
         "styles": {
             "activeWindow": "default",
-            "aiPlanUsage": "expressive",
+            "aiPlanUsage": "default",
             "battery": "default",
             "bluetooth": "expressive",
             "clock": "material",
@@ -1784,6 +1866,7 @@
             "date": "default",
             "keyboard": "expressive",
             "media": "expressive",
+            "networkSpeed": "default",
             "notification": "default",
             "policies": "expressive",
             "portWatcher": "expressive",
@@ -1803,6 +1886,7 @@
         },
         "timers": {
             "colorMode": "primary",
+            "sculptVariant": "squeeze",
             "showCountdowns": true,
             "showPomodoro": true,
             "showStopwatch": true
@@ -1826,6 +1910,7 @@
         "utilButtons": {
             "colorMode": "tertiaryContainer",
             "isRecording": false,
+            "sculptVariant": "toolbar",
             "showColorPicker": true,
             "showDarkModeToggle": false,
             "showKeyboardToggle": false,
@@ -1847,6 +1932,8 @@
         "weatherWidget": {
             "colorMode": "tonal",
             "horizonVariant": "balanced",
+            "sculptShowDetails": true,
+            "sculptVariant": "poster",
             "tesseraVariant": "paired"
         },
         "workspaces": {
@@ -2056,6 +2143,36 @@
                     "colors",
                     "widgets",
                     "style"
+                ]
+            },
+            {
+                "bar": [
+                    "terminal",
+                    "claude",
+                    "zed"
+                ],
+                "hidden": [
+                    "pinDock",
+                    "icon"
+                ],
+                "menu": "desktopItem",
+                "order": [
+                    "open",
+                    "separator",
+                    "rename",
+                    "reveal",
+                    "copy",
+                    "details",
+                    "terminal",
+                    "claude",
+                    "zed",
+                    "separator-2",
+                    "arrange",
+                    "screen",
+                    "separator-3",
+                    "remove",
+                    "icon",
+                    "pinDock"
                 ]
             }
         ],
@@ -2356,6 +2473,9 @@
             "fingerprint": {
                 "enable": true
             },
+            "health": {
+                "enable": true
+            },
             "keyboard": {
                 "enable": true,
                 "notchHeight": 36,
@@ -2522,6 +2642,45 @@
     "hacks": {
         "arbitraryRaceConditionDelay": 20
     },
+    "health": {
+        "alerts": {
+            "holdInFullscreen": true,
+            "island": true,
+            "maxPer10Min": 3,
+            "notifyFallback": true
+        },
+        "assistant": {
+            "enable": true,
+            "redact": true
+        },
+        "enable": true,
+        "historyDays": 30,
+        "noise": {
+            "knownAfterBoots": 3,
+            "ofLastBoots": 5,
+            "quietDaysForNew": 14
+        },
+        "sources": {
+            "appLaunches": true,
+            "crashes": true,
+            "drives": true,
+            "filesystems": true,
+            "firmware": true,
+            "journal": true,
+            "packages": true,
+            "pressure": true,
+            "thermals": true,
+            "timesync": true,
+            "units": true,
+            "userUnits": true
+        },
+        "thresholds": {
+            "diskCritPercent": 97,
+            "diskWarnPercent": 90,
+            "psiMemPercent": 10,
+            "restartLoop": 5
+        }
+    },
     "hyprland": {
         "advancedSettings": false,
         "defaultHyprlandLayout": "default"
@@ -2531,9 +2690,9 @@
         "notifyOnExpiry": true,
         "persistInhibit": "session",
         "quickDurations": [
+            5,
             45,
-            15,
-            30
+            15
         ],
         "warnLeadSec": 60
     },
