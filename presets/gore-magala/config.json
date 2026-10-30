@@ -12,21 +12,21 @@
         "blur": {
             "advancedOptions": false,
             "brightness": 1,
-            "contrast": 0.89,
+            "contrast": 1,
             "ignoreOpacity": true,
             "inputMethods": true,
             "inputMethodsIgnoreAlpha": 0.8,
-            "mode": "live",
+            "mode": "xray",
             "newOptimizations": true,
-            "noise": 0.05,
+            "noise": 0,
             "opaqueWindows": false,
-            "passes": 3,
-            "popups": false,
+            "passes": 2,
+            "popups": true,
             "popupsIgnoreAlpha": 0.6,
             "special": false,
             "vibrancy": 0.2,
             "vibrancyDarkness": 0.2,
-            "xray": false
+            "xray": true
         },
         "blurSize": 10,
         "borderColorType": "primary",
@@ -56,6 +56,12 @@
         "icons": {
             "enableShapeMask": false,
             "enableThemed": false,
+            "iiPack": {
+                "glyphScale": 1,
+                "plateScale": 1,
+                "shape": "circle",
+                "source": ""
+            },
             "shapeMask": "Heart"
         },
         "ignoreAlpha": 0.1,
@@ -93,7 +99,7 @@
         "toggleWindowRounding": true,
         "transparency": {
             "automatic": true,
-            "backgroundTransparency": 0.2823669409343364,
+            "backgroundTransparency": 0.3,
             "contentTransparency": 0.3640866698409531,
             "enable": false,
             "popups": true
@@ -114,6 +120,7 @@
     },
     "apps": {
         "bluetooth": "kcmshell6 kcm_bluetooth",
+        "editor": "code",
         "manageUser": "kcmshell6 kcm_users",
         "network": "kcmshell6 kcm_networkmanagement",
         "networkEthernet": "kcmshell6 kcm_networkmanagement",
@@ -135,22 +142,32 @@
                 "id": "widget_calendar_next_event_rice",
                 "lockBehavior": "hide",
                 "placementStrategy": "free",
+                "positions": {
+                    "eDP-1": {
+                        "x": 1390,
+                        "y": 80
+                    }
+                },
                 "widgetId": "calendar_next_event",
-                "x": 1404,
-                "y": 69
+                "x": 1390,
+                "y": 80
             }
         ],
         "animateWallpaperChanges": true,
         "blurGradientExperiment": false,
-        "blurWhenWindowsOpen": true,
+        "blurWhenWindowsOpen": false,
         "blurWhenWindowsOpenRadius": 100,
+        "centeredBackground": "#000000",
         "cheatsheetZoomOut": false,
         "desktopIconScale": 1.5,
         "desktopIcons": {
             "autoArrange": false,
             "avoidPanels": true,
             "flow": "rows",
+            "groupColor": "auto",
             "groupColumns": 3,
+            "groupIconMask": "auto",
+            "groupShape": "auto",
             "groups": [
                 {
                     "height": 343,
@@ -159,10 +176,14 @@
                         "MHGU_Editor",
                         "GLIA",
                         "autobright",
-                        "claude-mods"
+                        "claude-mods",
+                        "Hey_Claude",
+                        "MH4U_MHGU_port",
+                        "MacOS-Like",
+                        "OpusMagnum_Solver"
                     ],
                     "title": "projects",
-                    "width": 390,
+                    "width": 510,
                     "x": 0,
                     "y": 120
                 },
@@ -192,10 +213,10 @@
                 {
                     "height": 343,
                     "items": [
-                        "Book 1 - Air",
                         "Book 2 - Spirits",
                         "Book 3 - Change",
-                        "Book 4 - Balance"
+                        "Book 4 - Balance",
+                        "Book 1 - Air"
                     ],
                     "title": ";;Korra",
                     "width": 380,
@@ -210,6 +231,7 @@
             "labelLines": 2,
             "labelStyle": "auto",
             "labels": "always",
+            "linkBadges": false,
             "margin": 12,
             "notificationBadges": true,
             "origin": "bottomLeft",
@@ -247,6 +269,8 @@
             },
             "enableBackgroundAnimation": true,
             "immersive": false,
+            "kineticFisheye": false,
+            "kineticLyrics": false,
             "lyricsOffsetMs": 0,
             "musicVideo": {
                 "dimBackground": true,
@@ -298,7 +322,7 @@
         "wallpaperAnimation": "random",
         "wallpaperEngineAssetsPath": "",
         "wallpaperEngineId": "1321607678",
-        "wallpaperPath": "$HOME/Pictures/Wallpapers/20220607_100331.png",
+        "wallpaperPath": "$HOME/.config/illogical-impulse/presets/Gore Magala.png",
         "widgets": {
             "ai_chat": {
                 "enable": false,
@@ -770,6 +794,17 @@
                 "x": 400,
                 "y": 100
             },
+            "converter_2x1": {
+                "category": "length",
+                "enable": false,
+                "from": "cm",
+                "placementStrategy": "free",
+                "to": "in",
+                "value": 1,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 120
+            },
             "dark_mode_pill": {
                 "enable": false,
                 "expressiveColors": false,
@@ -837,6 +872,22 @@
             "enableInnerShadow": true,
             "enableShadows": true,
             "enableSnap": true,
+            "favorites_1x1": {
+                "enable": false,
+                "placementStrategy": "free",
+                "showLabels": true,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 120
+            },
+            "favorites_row": {
+                "enable": false,
+                "placementStrategy": "free",
+                "showLabels": true,
+                "widgetSize": 100,
+                "x": 400,
+                "y": 120
+            },
             "gridStep": 10,
             "grid_card_clock": {
                 "enable": false,
@@ -844,6 +895,13 @@
                 "widgetSize": 100,
                 "x": 400,
                 "y": 100
+            },
+            "home_devices": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
             },
             "lightweightPreviews": true,
             "lockWidgetPositions": false,
@@ -1012,6 +1070,42 @@
                 "enable": false,
                 "expressiveColors": false,
                 "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "people_birthday": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "people_birthdays": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "people_countdowns": {
+                "enable": false,
+                "events": [],
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "people_favorites": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "people_holiday": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
                 "x": 200,
                 "y": 200
             },
@@ -1240,6 +1334,31 @@
                 "x": 400,
                 "y": 100
             },
+            "search_pixel": {
+                "action1": "lens",
+                "action2": "music_rec",
+                "action3": "ai_chat",
+                "enable": false,
+                "hint": "",
+                "logo": "google",
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 400,
+                "y": 120
+            },
+            "search_shortcuts": {
+                "barAction": "ai_chat",
+                "enable": false,
+                "hint": "",
+                "placementStrategy": "free",
+                "shortcut1": "clipboard",
+                "shortcut2": "emojis",
+                "shortcut3": "files",
+                "shortcut4": "lens",
+                "widgetSize": 100,
+                "x": 400,
+                "y": 120
+            },
             "send_drop": {
                 "backend": "kdeconnect",
                 "enable": false,
@@ -1249,6 +1368,27 @@
                 "y": 120
             },
             "session_grid": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 400,
+                "y": 120
+            },
+            "shelf_1x1": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 400,
+                "y": 120
+            },
+            "shelf_1x2": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 400,
+                "y": 120
+            },
+            "shelf_2x1": {
                 "enable": false,
                 "placementStrategy": "free",
                 "widgetSize": 100,
@@ -1412,6 +1552,27 @@
                 "x": 200,
                 "y": 200
             },
+            "weather_collage": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "weather_daylight": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "weather_dial": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
             "weather_forecast": {
                 "enable": false,
                 "expressiveColors": true,
@@ -1434,6 +1595,20 @@
                 "x": 200,
                 "y": 200
             },
+            "weather_monolith": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "weather_pattern": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
             "weather_pill": {
                 "enable": false,
                 "expressiveColors": true,
@@ -1441,10 +1616,74 @@
                 "x": 200,
                 "y": 200
             },
+            "weather_ranges": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "weather_ribbon": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "weather_silhouette": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "weather_strip": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
             "weather_typography": {
                 "enable": false,
                 "expressiveColors": true,
                 "placementStrategy": "free",
+                "x": 200,
+                "y": 200
+            },
+            "wellbeing_bedtime": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "wellbeing_break": {
+                "breakEveryMinutes": 50,
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "wellbeing_day": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "wellbeing_limits": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
+                "x": 200,
+                "y": 200
+            },
+            "wellbeing_screen_ring": {
+                "enable": false,
+                "placementStrategy": "free",
+                "widgetSize": 100,
                 "x": 200,
                 "y": 200
             },
@@ -1679,11 +1918,6 @@
         "layouts": {
             "center": [],
             "left": [
-                {
-                    "centered": false,
-                    "id": "ai_plan_usage",
-                    "visible": true
-                },
                 {
                     "centered": false,
                     "id": "workspaces",
@@ -1940,9 +2174,11 @@
             "activeIndicatorOpacity": 100,
             "activeIndicatorShape": "Heart",
             "alwaysShowNumbers": false,
-            "autoCompact": true,
-            "autoCompactCurrentGap": "onswitch",
-            "autoCompactDelay": 100,
+            "arranger": {
+                "autoCloseGaps": true,
+                "currentGap": "onswitch",
+                "delay": 100
+            },
             "colorMode": "primary",
             "dockHoverEffect": true,
             "dockShowActiveIndicator": true,
@@ -2043,72 +2279,7 @@
             "upcomingHorizonDays": 14
         }
     },
-    "clockApp": {
-        "analogWorldClock": true,
-        "bedtime": {
-            "days": [
-                true,
-                true,
-                true,
-                true,
-                true,
-                true,
-                true
-            ],
-            "enable": false,
-            "nightEndsHour": 5,
-            "remindEveryMinutes": 15,
-            "time": "23:30",
-            "windDownMinutes": 30
-        },
-        "enable": true,
-        "phoneAlarm": {
-            "clockApps": [
-                "Clock",
-                "Rel\u00f3gio",
-                "Alarm",
-                "Alarme",
-                "com.google.android.deskclock",
-                "com.sec.android.app.clockpackage"
-            ],
-            "enable": true,
-            "ignorePackages": [
-                "com.samsung.android.app.routines"
-            ],
-            "pollMinutes": 10
-        },
-        "reminders": {
-            "alertBackgroundColor": "",
-            "alertBackgroundImage": "",
-            "alertSound": true,
-            "allDayTime": "09:00",
-            "autoDeleteCompletedDays": 0,
-            "autoSilenceMinutes": 1,
-            "catchUpMinutes": 10,
-            "categoriesExpanded": true,
-            "defaultAlert": "light",
-            "defaultCategory": "default",
-            "pinImportant": true,
-            "showCompleted": false,
-            "showInTimetable": true,
-            "showTemplates": false,
-            "snoozeMinutes": 5,
-            "sortBy": "alertTime",
-            "todoSync": {
-                "enable": false,
-                "intervalMinutes": 15
-            },
-            "trashDays": 30,
-            "view": "card",
-            "wakeFromSuspend": true
-        },
-        "showSecondsInApp": true,
-        "showTimetableEvents": true,
-        "startTab": "last",
-        "timetableLeadMinutes": 15,
-        "timetableLookaheadDays": 2
-    },
-    "configVersion": 29,
+    "configVersion": 31,
     "conflictKiller": {
         "autoKillNotificationDaemons": false,
         "autoKillTrays": true
@@ -2149,7 +2320,7 @@
                 "bar": [
                     "terminal",
                     "claude",
-                    "zed"
+                    "editor"
                 ],
                 "hidden": [
                     "pinDock",
@@ -2165,7 +2336,7 @@
                     "details",
                     "terminal",
                     "claude",
-                    "zed",
+                    "editor",
                     "separator-2",
                     "arrange",
                     "screen",
@@ -2181,6 +2352,7 @@
         "submenus": "inline"
     },
     "crosshair": {
+        "autoPin": false,
         "code": ""
     },
     "dictation": {
@@ -2211,6 +2383,7 @@
         "strict": true
     },
     "dock": {
+        "autoOverflowGroup": true,
         "blockHoverInFullscreen": true,
         "dimInactiveIcons": false,
         "dockRadius": 10,
@@ -2229,7 +2402,7 @@
         "islandsStyle": true,
         "isolateMonitors": false,
         "launchAnimation": "pulse",
-        "lockReorder": true,
+        "lockReorder": false,
         "magnificationCurve": "cosine",
         "magnificationDynamicSpacing": true,
         "magnificationInfluenceRadius": 2.4,
@@ -2240,6 +2413,12 @@
         "notificationAnimation": "pulse",
         "pinnedOnStartup": false,
         "position": "bottom",
+        "runningIndicatorLength": 10,
+        "runningIndicatorMaxVisible": 5,
+        "runningIndicatorNeutralColor": false,
+        "runningIndicatorScaleWithDock": true,
+        "runningIndicatorStyle": "dot",
+        "runningIndicatorThickness": 3,
         "shapeMask": "Circle",
         "showDividers": false,
         "showNotificationBadges": true,
@@ -2654,6 +2833,10 @@
             "redact": true
         },
         "enable": true,
+        "guard": {
+            "enable": true,
+            "openTerminal": true
+        },
         "historyDays": 30,
         "noise": {
             "knownAfterBoots": 3,
@@ -2662,23 +2845,30 @@
         },
         "sources": {
             "appLaunches": true,
+            "boot": true,
             "crashes": true,
             "drives": true,
             "filesystems": true,
             "firmware": true,
+            "hardware": true,
             "journal": true,
             "packages": true,
             "pressure": true,
+            "rebuild": true,
+            "shell": true,
+            "shellLog": false,
             "thermals": true,
             "timesync": true,
             "units": true,
             "userUnits": true
         },
         "thresholds": {
+            "batteryWearPercent": 80,
             "diskCritPercent": 97,
             "diskWarnPercent": 90,
             "psiMemPercent": 10,
-            "restartLoop": 5
+            "restartLoop": 5,
+            "shellMemoryMb": 1200
         }
     },
     "hyprland": {
@@ -2949,6 +3139,8 @@
         "enableBetterlyrics": true,
         "enableGenius": false,
         "enableLrclib": false,
+        "enableLrcmux": true,
+        "enableNetease": true,
         "enableYtmusic": false,
         "lyricsProvider": "auto"
     },
@@ -2956,6 +3148,7 @@
         "albumArtBlurAnimations": true,
         "dynamicAlbumColors": true,
         "filterDuplicatePlayers": true,
+        "preferMusicPlayers": false,
         "priorityPlayer": ""
     },
     "mediaDownloader": {
@@ -3005,6 +3198,7 @@
     },
     "oledSaver": {
         "antiBurnIn": false,
+        "clockStyle": "widgets",
         "cursorHideDelay": 1,
         "enable": true,
         "lockTimeout": 1
@@ -3044,7 +3238,7 @@
             "allowMouse": false,
             "allowPen": true,
             "allowTouch": true,
-            "enable": true,
+            "enable": false,
             "hideOnPhysicalKey": true,
             "hideOnTouchOutside": true,
             "touchWindowMs": 1200
@@ -3069,6 +3263,7 @@
         "clickthroughOpacity": 0.8,
         "darkenScreen": true,
         "discordVoice": {
+            "autoPin": false,
             "autoResize": true,
             "avatarSize": 52,
             "blurEnabled": false,
@@ -3088,13 +3283,10 @@
             "showSlider": true,
             "useGradientMask": true
         },
-        "notes": {
-            "allowEditingIcon": true,
-            "showTabs": true
-        },
         "openingZoomAnimation": true,
         "perfMonitor": {
             "anchor": "none",
+            "autoPin": false,
             "backgroundOpacity": 0.55,
             "blur": false,
             "colorCodeFps": true,
@@ -3102,6 +3294,7 @@
             "footerText": "",
             "fpsOnly": false,
             "fpsTarget": 60,
+            "gamesAutoWired": true,
             "gpuDevice": "auto",
             "gpuName": "",
             "hotTemp": 85,
@@ -3286,6 +3479,22 @@
             "windows": true
         }
     },
+    "reopenClosedWindow": {
+        "depth": 10,
+        "enable": true,
+        "ignoredClasses": [
+            "org.quickshell",
+            "quickshell",
+            "xdg-desktop-portal-gtk",
+            "org.freedesktop.impl.portal.desktop.kde",
+            "org.kde.polkit-kde-authentication-agent-1",
+            "hyprpolkitagent",
+            "hyprland-share-picker",
+            "pinentry-qt",
+            "gcr-prompter"
+        ],
+        "minLifetimeMs": 1500
+    },
     "resources": {
         "diskInterval": 5000,
         "diskMount": "/",
@@ -3422,7 +3631,7 @@
         },
         "enableBanner": true,
         "keepLeftSidebarLoaded": true,
-        "keepRightSidebarLoaded": true,
+        "keepRightSidebarLoaded": false,
         "position": "default",
         "quickSliders": {
             "enable": true,
@@ -3563,6 +3772,7 @@
                     "gameMode"
                 ]
             },
+            "expressive": false,
             "style": "android",
             "useThreeWaySliders": true
         },
@@ -3804,47 +4014,6 @@
         "restoreOnUntile": true,
         "showOnDragStart": true
     },
-    "time": {
-        "alarms": {
-            "autoSilenceMinutes": 5,
-            "catchUpMinutes": 10,
-            "showAlarmsSection": true,
-            "showAnalogClock": true,
-            "showUpcoming": true,
-            "showWorldClocks": true,
-            "snoozeMinutes": 10,
-            "upcomingMinutes": 60,
-            "useFullscreenPopup": false,
-            "wakeFromSuspend": true,
-            "wakeLeadSeconds": 90
-        },
-        "dateFormat": "dd/MM, ddd",
-        "dateWithYearFormat": "dd/MM/yyyy",
-        "firstDayOfWeek": 0,
-        "format": "hh:mm",
-        "longDateFormat": "dd/MM/yyyy",
-        "pomodoro": {
-            "breakTime": 300,
-            "cyclesBeforeLongBreak": 4,
-            "focus": 1500,
-            "longBreak": 1200,
-            "notify": true
-        },
-        "secondPrecision": false,
-        "secondsFormat": "ss",
-        "shortDateFormat": "dd/MM",
-        "timer": {
-            "notify": true,
-            "presets": [
-                60,
-                300,
-                600,
-                900,
-                1800
-            ]
-        },
-        "worldClocks": []
-    },
     "tray": {
         "filterPassive": false,
         "invertPinnedItems": true,
@@ -3858,7 +4027,7 @@
     "update": {
         "aiSummary": false,
         "aiSummaryMinCommits": 10,
-        "autoCheckInterval": "daily",
+        "autoCheckInterval": "disabled",
         "replaceHyprConfig": true
     },
     "updates": {

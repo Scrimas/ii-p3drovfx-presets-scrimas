@@ -3,13 +3,18 @@
     "name": "Gore Magala",
     "author": "Scrimas",
     "description": "Gore Magala (best monster btw)",
-    "version": "1.0.2",
-    "configVersion": 29,
+    "version": "1.0.3",
+    "configVersion": 31,
     "config": "config.json",
     "screenshots": [
         "screenshots/1-a2028deb.png"
     ],
     "changelog": [
+        {
+            "version": "1.0.3",
+            "date": "2026-10-30",
+            "notes": "minor"
+        },
         {
             "version": "1.0.2",
             "date": "2026-10-13",
